@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    var isShowed: Bool {
+    public var isShowed: Bool {
         get { return !isHidden }
         set { isHidden = !newValue }
     }
