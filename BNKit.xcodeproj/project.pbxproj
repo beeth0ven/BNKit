@@ -49,6 +49,17 @@
 		45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */; };
 		45B929021DDD5E2F00BDCB41 /* NSJSONSerialization+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */; };
 		45B929061DDD619600BDCB41 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B929051DDD619600BDCB41 /* Cache.swift */; };
+		45EAAE311DDD7E3000FC7B6F /* UIResponder+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */; };
+		45EAAE341DDD7E8700FC7B6F /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */; };
+		45EAAE351DDD7E8700FC7B6F /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */; };
+		45EAAE381DDD7F3E00FC7B6F /* CLLocationCoordinate2D+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE371DDD7F3E00FC7B6F /* CLLocationCoordinate2D+.swift */; };
+		45EAAE3A1DDD7FBB00FC7B6F /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE391DDD7FBB00FC7B6F /* UIApplication+.swift */; };
+		45EAAE3C1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE3B1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift */; };
+		45EAAE3E1DDD806300FC7B6F /* CLLocation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE3D1DDD806300FC7B6F /* CLLocation+.swift */; };
+		45EAAE401DDD807A00FC7B6F /* MKPlacemark+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE3F1DDD807A00FC7B6F /* MKPlacemark+.swift */; };
+		45EAAE421DDD80EF00FC7B6F /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE411DDD80EF00FC7B6F /* ViewType.swift */; };
+		45EAAE441DDD80FA00FC7B6F /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE431DDD80FA00FC7B6F /* ViewControllerType.swift */; };
+		45EAAE491DDD81E000FC7B6F /* Bundle+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE481DDD81E000FC7B6F /* Bundle+Name.swift */; };
 		7EBE7D5D4BA6CC61E61B1566 /* Pods_BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082A996843511F8EB8C289F /* Pods_BNKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +112,17 @@
 		45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlist.swift; sourceTree = "<group>"; };
 		45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSJSONSerialization+.swift"; sourceTree = "<group>"; };
 		45B929051DDD619600BDCB41 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Rx.swift"; sourceTree = "<group>"; };
+		45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
+		45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
+		45EAAE371DDD7F3E00FC7B6F /* CLLocationCoordinate2D+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+.swift"; sourceTree = "<group>"; };
+		45EAAE391DDD7FBB00FC7B6F /* UIApplication+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		45EAAE3B1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLGeocoder+Rx.swift"; sourceTree = "<group>"; };
+		45EAAE3D1DDD806300FC7B6F /* CLLocation+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+.swift"; sourceTree = "<group>"; };
+		45EAAE3F1DDD807A00FC7B6F /* MKPlacemark+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKPlacemark+.swift"; sourceTree = "<group>"; };
+		45EAAE411DDD80EF00FC7B6F /* ViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		45EAAE431DDD80FA00FC7B6F /* ViewControllerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
+		45EAAE481DDD81E000FC7B6F /* Bundle+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Name.swift"; sourceTree = "<group>"; };
 		5082A996843511F8EB8C289F /* Pods_BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -160,11 +182,13 @@
 		4535D2251DDC54FF00C9677A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				45B928FC1DDD5D7400BDCB41 /* CoreGraphics+ */,
-				45B928DA1DDD4F8F00BDCB41 /* Rx+ */,
-				45B928D31DDD44D200BDCB41 /* CoreData+ */,
+				45EAAE471DDD818900FC7B6F /* BNKit */,
 				45B928C41DDD415000BDCB41 /* UIKit+ */,
 				4535D23F1DDD382B00C9677A /* Fundation+ */,
+				45B928DA1DDD4F8F00BDCB41 /* Rx+ */,
+				45B928FC1DDD5D7400BDCB41 /* CoreGraphics+ */,
+				45EAAE361DDD7F0700FC7B6F /* MapKit+ */,
+				45B928D31DDD44D200BDCB41 /* CoreData+ */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -194,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				4535D2401DDD384200C9677A /* Array+.swift */,
+				45EAAE481DDD81E000FC7B6F /* Bundle+Name.swift */,
 				45B929051DDD619600BDCB41 /* Cache.swift */,
 				45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */,
 				45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */,
@@ -211,11 +236,14 @@
 				45B928F31DDD55C300BDCB41 /* RegularExpression */,
 				45B928C71DDD428F00BDCB41 /* CellSelfSized.swift */,
 				45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */,
+				45EAAE431DDD80FA00FC7B6F /* ViewControllerType.swift */,
+				45EAAE411DDD80EF00FC7B6F /* ViewType.swift */,
 				45B928C91DDD42E300BDCB41 /* UIViewController+Alert.swift */,
 				45B928CB1DDD42F100BDCB41 /* UIView+IBInspectable.swift */,
 				45B928CD1DDD435E00BDCB41 /* UIView+Animation.swift */,
 				45B928CF1DDD437900BDCB41 /* UIColor+Hex.swift */,
 				45B928D11DDD43D200BDCB41 /* UIColor+Flat.swift */,
+				45EAAE391DDD7FBB00FC7B6F /* UIApplication+.swift */,
 			);
 			path = "UIKit+";
 			sourceTree = "<group>";
@@ -234,11 +262,15 @@
 			children = (
 				45B928F11DDD546100BDCB41 /* NSObject+Rx.swift */,
 				45B928DB1DDD4FA000BDCB41 /* Collection+Rx.swift */,
+				45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */,
+				45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */,
+				45EAAE3B1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift */,
 				45B928DD1DDD4FB300BDCB41 /* UICollectionViewCell+Rx.swift */,
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
 				45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */,
 				45B928E11DDD4FD000BDCB41 /* UITableView+Rx.swift */,
 				45B928E51DDD4FE500BDCB41 /* UIViewController+Rx.swift */,
+				45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */,
 				45B928E61DDD4FE500BDCB41 /* UIView+Rx.swift */,
 				45B928E91DDD4FFE00BDCB41 /* ObservableType+.swift */,
 				45B928EB1DDD500400BDCB41 /* Operators.swift */,
@@ -265,6 +297,23 @@
 				45B928FD1DDD5D7400BDCB41 /* CoreGraphics+.swift */,
 			);
 			path = "CoreGraphics+";
+			sourceTree = "<group>";
+		};
+		45EAAE361DDD7F0700FC7B6F /* MapKit+ */ = {
+			isa = PBXGroup;
+			children = (
+				45EAAE371DDD7F3E00FC7B6F /* CLLocationCoordinate2D+.swift */,
+				45EAAE3D1DDD806300FC7B6F /* CLLocation+.swift */,
+				45EAAE3F1DDD807A00FC7B6F /* MKPlacemark+.swift */,
+			);
+			path = "MapKit+";
+			sourceTree = "<group>";
+		};
+		45EAAE471DDD818900FC7B6F /* BNKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BNKit;
 			sourceTree = "<group>";
 		};
 		4C41169094423872C4686491 /* Frameworks */ = {
@@ -487,15 +536,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45EAAE421DDD80EF00FC7B6F /* ViewType.swift in Sources */,
 				45B928E31DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift in Sources */,
 				4535D2411DDD384200C9677A /* Array+.swift in Sources */,
+				45EAAE3A1DDD7FBB00FC7B6F /* UIApplication+.swift in Sources */,
 				45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */,
 				45B928C81DDD428F00BDCB41 /* CellSelfSized.swift in Sources */,
 				45B929061DDD619600BDCB41 /* Cache.swift in Sources */,
 				45B928FA1DDD55C300BDCB41 /* RegularExpressionTextView.swift in Sources */,
 				45B928F81DDD55C300BDCB41 /* PlaceholderTextView.swift in Sources */,
+				45EAAE3E1DDD806300FC7B6F /* CLLocation+.swift in Sources */,
 				45B928DE1DDD4FB300BDCB41 /* UICollectionViewCell+Rx.swift in Sources */,
 				45B928EA1DDD4FFE00BDCB41 /* ObservableType+.swift in Sources */,
+				45EAAE441DDD80FA00FC7B6F /* ViewControllerType.swift in Sources */,
 				45B928E21DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift in Sources */,
 				45B928BF1DDD3E2900BDCB41 /* TimeInterval+.swift in Sources */,
 				4535D2451DDD38C100C9677A /* Queue.swift in Sources */,
@@ -503,9 +556,12 @@
 				45B928D21DDD43D200BDCB41 /* UIColor+Flat.swift in Sources */,
 				45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */,
 				45B928D71DDD44D800BDCB41 /* ManagedObjectType.swift in Sources */,
+				45EAAE401DDD807A00FC7B6F /* MKPlacemark+.swift in Sources */,
 				45B928FB1DDD55C300BDCB41 /* RegularPattern.swift in Sources */,
 				45B928E71DDD4FE500BDCB41 /* UIViewController+Rx.swift in Sources */,
 				45B928F21DDD546100BDCB41 /* NSObject+Rx.swift in Sources */,
+				45EAAE381DDD7F3E00FC7B6F /* CLLocationCoordinate2D+.swift in Sources */,
+				45EAAE341DDD7E8700FC7B6F /* MKMapView+Rx.swift in Sources */,
 				45B928E81DDD4FE500BDCB41 /* UIView+Rx.swift in Sources */,
 				45B928D61DDD44D800BDCB41 /* CoreDataStack.swift in Sources */,
 				45B928D01DDD437900BDCB41 /* UIColor+Hex.swift in Sources */,
@@ -515,7 +571,11 @@
 				45B928CE1DDD435E00BDCB41 /* UIView+Animation.swift in Sources */,
 				45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */,
 				45B928EC1DDD500400BDCB41 /* Operators.swift in Sources */,
+				45EAAE311DDD7E3000FC7B6F /* UIResponder+Rx.swift in Sources */,
+				45EAAE491DDD81E000FC7B6F /* Bundle+Name.swift in Sources */,
+				45EAAE351DDD7E8700FC7B6F /* CLLocationManager+Rx.swift in Sources */,
 				45B928DC1DDD4FA000BDCB41 /* Collection+Rx.swift in Sources */,
+				45EAAE3C1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift in Sources */,
 				45B928F91DDD55C300BDCB41 /* RegularExpressionTextField.swift in Sources */,
 				45B928CA1DDD42E300BDCB41 /* UIViewController+Alert.swift in Sources */,
 				45B928E41DDD4FD000BDCB41 /* UITableView+Rx.swift in Sources */,

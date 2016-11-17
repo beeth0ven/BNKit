@@ -1,14 +1,14 @@
 //
-//  UIStoryboard+Name.swift
-//  WorkMap
+//  Bundle+Name.swift
+//  BNKit
 //
-//  Created by luojie on 16/10/2.
+//  Created by luojie on 2016/11/17.
 //  Copyright © 2016年 LuoJie. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-extension UIStoryboard {
+extension Bundle {
     
     public struct Name: RawRepresentable {
         
@@ -18,4 +18,9 @@ extension UIStoryboard {
             self.rawValue = rawValue
         }
     }
+}
+
+extension Bundle.Name {
+    
+    public static let BNKit = Bundle.Name(rawValue: "org.cocoapods.BNKit")
 }
