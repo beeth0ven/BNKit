@@ -11,7 +11,7 @@ import RxSwift
 
 extension UIViewController {
     
-    func showAlert(style: UIAlertControllerStyle = .alert, message: String, titles: [String]) -> Observable<String> {
+    public func showAlert(style: UIAlertControllerStyle = .alert, message: String, titles: [String]) -> Observable<String> {
         
         return Observable.create { [unowned self] observer in
             let vc = UIAlertController(title: nil, message: message, preferredStyle: style)
