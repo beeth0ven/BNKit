@@ -11,7 +11,7 @@ import Foundation
 
 extension Array {
     
-    func element(at index: Index) -> Element? {
+    public func element(at index: Index) -> Element? {
         guard startIndex <= index && index < endIndex else {
             return nil
         }
@@ -22,7 +22,7 @@ extension Array {
 
 extension Array {
     
-    mutating func removeFirst(where predicate: (Element) -> Bool) {
+    public mutating func removeFirst(where predicate: (Element) -> Bool) {
         if let index = index(where: predicate) {
             self.remove(at: index)
         }

@@ -10,7 +10,7 @@ import Foundation
 
 extension Dictionary {
     
-    init(keyValues: [(Key, Value)]) {
+    public init(keyValues: [(Key, Value)]) {
         self.init()
         for keyValue in keyValues {
             self[keyValue.0] = keyValue.1

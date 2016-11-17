@@ -26,5 +26,5 @@ post_install do |installer|
   end
 end
 
-#   Pod update --no-repo-update
+#   pod update --no-repo-update
 #   The Podfile: http://guides.cocoapods.org/using/the-podfile.html
