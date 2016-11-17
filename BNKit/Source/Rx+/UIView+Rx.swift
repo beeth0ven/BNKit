@@ -12,9 +12,9 @@ import RxCocoa
 
 extension Reactive where Base: UIView {
     
-    public var show: UIBindingObserver<Base, Bool> {
-        return UIBindingObserver(UIElement: self.base) { view, show in
-            view.isHidden = !show
+    public var isShowed: UIBindingObserver<Base, Bool> {
+        return UIBindingObserver(UIElement: self.base) { view, isShowed in
+            view.isShowed = isShowed
         }
     }
 }
