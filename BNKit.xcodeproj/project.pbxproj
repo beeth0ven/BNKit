@@ -40,6 +40,11 @@
 		45B928EC1DDD500400BDCB41 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928EB1DDD500400BDCB41 /* Operators.swift */; };
 		45B928EE1DDD500C00BDCB41 /* Optional+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928ED1DDD500C00BDCB41 /* Optional+Rx.swift */; };
 		45B928F01DDD501000BDCB41 /* ComputedVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928EF1DDD501000BDCB41 /* ComputedVariable.swift */; };
+		45B928F21DDD546100BDCB41 /* NSObject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928F11DDD546100BDCB41 /* NSObject+Rx.swift */; };
+		45B928F81DDD55C300BDCB41 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928F41DDD55C300BDCB41 /* PlaceholderTextView.swift */; };
+		45B928F91DDD55C300BDCB41 /* RegularExpressionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928F51DDD55C300BDCB41 /* RegularExpressionTextField.swift */; };
+		45B928FA1DDD55C300BDCB41 /* RegularExpressionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928F61DDD55C300BDCB41 /* RegularExpressionTextView.swift */; };
+		45B928FB1DDD55C300BDCB41 /* RegularPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928F71DDD55C300BDCB41 /* RegularPattern.swift */; };
 		7EBE7D5D4BA6CC61E61B1566 /* Pods_BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082A996843511F8EB8C289F /* Pods_BNKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +88,11 @@
 		45B928EB1DDD500400BDCB41 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		45B928ED1DDD500C00BDCB41 /* Optional+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Rx.swift"; sourceTree = "<group>"; };
 		45B928EF1DDD501000BDCB41 /* ComputedVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputedVariable.swift; sourceTree = "<group>"; };
+		45B928F11DDD546100BDCB41 /* NSObject+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Rx.swift"; sourceTree = "<group>"; };
+		45B928F41DDD55C300BDCB41 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		45B928F51DDD55C300BDCB41 /* RegularExpressionTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionTextField.swift; sourceTree = "<group>"; };
+		45B928F61DDD55C300BDCB41 /* RegularExpressionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularExpressionTextView.swift; sourceTree = "<group>"; };
+		45B928F71DDD55C300BDCB41 /* RegularPattern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularPattern.swift; sourceTree = "<group>"; };
 		5082A996843511F8EB8C289F /* Pods_BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +196,7 @@
 		45B928C41DDD415000BDCB41 /* UIKit+ */ = {
 			isa = PBXGroup;
 			children = (
+				45B928F31DDD55C300BDCB41 /* RegularExpression */,
 				45B928C71DDD428F00BDCB41 /* CellSelfSized.swift */,
 				45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */,
 				45B928C91DDD42E300BDCB41 /* UIViewController+Alert.swift */,
@@ -209,6 +220,7 @@
 		45B928DA1DDD4F8F00BDCB41 /* Rx+ */ = {
 			isa = PBXGroup;
 			children = (
+				45B928F11DDD546100BDCB41 /* NSObject+Rx.swift */,
 				45B928DB1DDD4FA000BDCB41 /* Collection+Rx.swift */,
 				45B928DD1DDD4FB300BDCB41 /* UICollectionViewCell+Rx.swift */,
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
@@ -222,6 +234,17 @@
 				45B928EF1DDD501000BDCB41 /* ComputedVariable.swift */,
 			);
 			path = "Rx+";
+			sourceTree = "<group>";
+		};
+		45B928F31DDD55C300BDCB41 /* RegularExpression */ = {
+			isa = PBXGroup;
+			children = (
+				45B928F51DDD55C300BDCB41 /* RegularExpressionTextField.swift */,
+				45B928F61DDD55C300BDCB41 /* RegularExpressionTextView.swift */,
+				45B928F41DDD55C300BDCB41 /* PlaceholderTextView.swift */,
+				45B928F71DDD55C300BDCB41 /* RegularPattern.swift */,
+			);
+			path = RegularExpression;
 			sourceTree = "<group>";
 		};
 		4C41169094423872C4686491 /* Frameworks */ = {
@@ -447,6 +470,8 @@
 				45B928E31DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift in Sources */,
 				4535D2411DDD384200C9677A /* Array+.swift in Sources */,
 				45B928C81DDD428F00BDCB41 /* CellSelfSized.swift in Sources */,
+				45B928FA1DDD55C300BDCB41 /* RegularExpressionTextView.swift in Sources */,
+				45B928F81DDD55C300BDCB41 /* PlaceholderTextView.swift in Sources */,
 				45B928DE1DDD4FB300BDCB41 /* UICollectionViewCell+Rx.swift in Sources */,
 				45B928EA1DDD4FFE00BDCB41 /* ObservableType+.swift in Sources */,
 				45B928E21DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift in Sources */,
@@ -456,7 +481,9 @@
 				45B928D21DDD43D200BDCB41 /* UIColor+Flat.swift in Sources */,
 				45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */,
 				45B928D71DDD44D800BDCB41 /* ManagedObjectType.swift in Sources */,
+				45B928FB1DDD55C300BDCB41 /* RegularPattern.swift in Sources */,
 				45B928E71DDD4FE500BDCB41 /* UIViewController+Rx.swift in Sources */,
+				45B928F21DDD546100BDCB41 /* NSObject+Rx.swift in Sources */,
 				45B928E81DDD4FE500BDCB41 /* UIView+Rx.swift in Sources */,
 				45B928D61DDD44D800BDCB41 /* CoreDataStack.swift in Sources */,
 				45B928D01DDD437900BDCB41 /* UIColor+Hex.swift in Sources */,
@@ -466,6 +493,7 @@
 				45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */,
 				45B928EC1DDD500400BDCB41 /* Operators.swift in Sources */,
 				45B928DC1DDD4FA000BDCB41 /* Collection+Rx.swift in Sources */,
+				45B928F91DDD55C300BDCB41 /* RegularExpressionTextField.swift in Sources */,
 				45B928CA1DDD42E300BDCB41 /* UIViewController+Alert.swift in Sources */,
 				45B928E41DDD4FD000BDCB41 /* UITableView+Rx.swift in Sources */,
 				45B928EE1DDD500C00BDCB41 /* Optional+Rx.swift in Sources */,
