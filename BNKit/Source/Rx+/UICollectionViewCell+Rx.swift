@@ -10,9 +10,9 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-public class RxCollectionViewCell: UICollectionViewCell {
+open class RxCollectionViewCell: UICollectionViewCell {
     
-    override public func prepareForReuse() {
+    override open func prepareForReuse() {
         super.prepareForReuse()
         prepareForReuseDisposeBag = DisposeBag()
     }
@@ -20,9 +20,9 @@ public class RxCollectionViewCell: UICollectionViewCell {
     public private(set) var prepareForReuseDisposeBag = DisposeBag()
 }
 
-public class RxTableViewCell: UITableViewCell {
+open class RxTableViewCell: UITableViewCell {
     
-    override public func prepareForReuse() {
+    override open func prepareForReuse() {
         super.prepareForReuse()
         prepareForReuseDisposeBag = DisposeBag()
     }
