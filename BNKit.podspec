@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     s.requires_arc = true
 
-    s.source_files = "BNKit/*.swift"
+    s.source_files = "BNKit/Source/*/*.swift"
     s.resources = "BNKit/*.{storyboard,xib}"
 
     s.dependency 'RxSwift', '~> 3.0'
