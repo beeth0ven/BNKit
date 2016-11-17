@@ -23,5 +23,5 @@ extension UIView {
 
 extension TimeInterval {
     
-    static let animation = 0.3
+    public static let animation = 0.3
 }
