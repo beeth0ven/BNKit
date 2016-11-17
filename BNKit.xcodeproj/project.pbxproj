@@ -48,7 +48,6 @@
 		45B928FE1DDD5D7400BDCB41 /* CoreGraphics+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928FD1DDD5D7400BDCB41 /* CoreGraphics+.swift */; };
 		45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */; };
 		45B929021DDD5E2F00BDCB41 /* NSJSONSerialization+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */; };
-		45B929061DDD619600BDCB41 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B929051DDD619600BDCB41 /* Cache.swift */; };
 		45EAAE311DDD7E3000FC7B6F /* UIResponder+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */; };
 		45EAAE341DDD7E8700FC7B6F /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */; };
 		45EAAE351DDD7E8700FC7B6F /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */; };
@@ -116,7 +115,6 @@
 		45B928FD1DDD5D7400BDCB41 /* CoreGraphics+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+.swift"; sourceTree = "<group>"; };
 		45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlist.swift; sourceTree = "<group>"; };
 		45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSJSONSerialization+.swift"; sourceTree = "<group>"; };
-		45B929051DDD619600BDCB41 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Rx.swift"; sourceTree = "<group>"; };
 		45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
 		45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 			children = (
 				4535D2401DDD384200C9677A /* Array+.swift */,
 				45EAAE481DDD81E000FC7B6F /* Bundle+Name.swift */,
-				45B929051DDD619600BDCB41 /* Cache.swift */,
 				45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */,
 				45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */,
 				4535D2421DDD387000C9677A /* Dictionary+.swift */,
@@ -566,7 +563,6 @@
 				45EAAE3A1DDD7FBB00FC7B6F /* UIApplication+.swift in Sources */,
 				45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */,
 				45B928C81DDD428F00BDCB41 /* CellSelfSized.swift in Sources */,
-				45B929061DDD619600BDCB41 /* Cache.swift in Sources */,
 				45B928FA1DDD55C300BDCB41 /* RegularExpressionTextView.swift in Sources */,
 				45B928F81DDD55C300BDCB41 /* PlaceholderTextView.swift in Sources */,
 				45EAAE3E1DDD806300FC7B6F /* CLLocation+.swift in Sources */,
