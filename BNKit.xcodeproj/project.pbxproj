@@ -18,6 +18,7 @@
 		4535D2411DDD384200C9677A /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D2401DDD384200C9677A /* Array+.swift */; };
 		4535D2431DDD387000C9677A /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D2421DDD387000C9677A /* Dictionary+.swift */; };
 		4535D2451DDD38C100C9677A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D2441DDD38C100C9677A /* Queue.swift */; };
+		45A3D62E1DE0A749005B91A6 /* Number+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3D62D1DE0A749005B91A6 /* Number+random.swift */; };
 		45B928BF1DDD3E2900BDCB41 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */; };
 		45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */; };
 		45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */; };
@@ -85,6 +86,7 @@
 		4535D2401DDD384200C9677A /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		4535D2421DDD387000C9677A /* Dictionary+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
 		4535D2441DDD38C100C9677A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		45A3D62D1DE0A749005B91A6 /* Number+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+random.swift"; sourceTree = "<group>"; };
 		45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
 		45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc_Value.swift"; sourceTree = "<group>"; };
 		45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */,
 				45EAAE4C1DDD857C00FC7B6F /* DateFormatter+.swift */,
 				45EAAE4E1DDD863A00FC7B6F /* Operator+.swift */,
+				45A3D62D1DE0A749005B91A6 /* Number+random.swift */,
 			);
 			path = "Fundation+";
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				45B928FA1DDD55C300BDCB41 /* RegularExpressionTextView.swift in Sources */,
 				45B928F81DDD55C300BDCB41 /* PlaceholderTextView.swift in Sources */,
 				45EAAE3E1DDD806300FC7B6F /* CLLocation+.swift in Sources */,
+				45A3D62E1DE0A749005B91A6 /* Number+random.swift in Sources */,
 				45B928DE1DDD4FB300BDCB41 /* UICollectionViewCell+Rx.swift in Sources */,
 				45B928EA1DDD4FFE00BDCB41 /* ObservableType+.swift in Sources */,
 				45EAAE441DDD80FA00FC7B6F /* ViewControllerType.swift in Sources */,
