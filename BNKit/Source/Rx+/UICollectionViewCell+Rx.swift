@@ -30,3 +30,18 @@ open class RxTableViewCell: UITableViewCell {
     public private(set) var prepareForReuseDisposeBag = DisposeBag()
 
 }
+
+
+extension RxCollectionViewCell {
+    
+    public var disposeBag: DisposeBag {
+        return prepareForReuseDisposeBag
+    }
+}
+
+extension RxTableViewCell {
+    
+    public var disposeBag: DisposeBag {
+        return prepareForReuseDisposeBag
+    }
+}

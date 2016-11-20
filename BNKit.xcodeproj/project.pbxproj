@@ -21,6 +21,7 @@
 		45A3D62E1DE0A749005B91A6 /* Number+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3D62D1DE0A749005B91A6 /* Number+random.swift */; };
 		45A3D6301DE19156005B91A6 /* BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4535D21A1DDC547800C9677A /* BNKit.framework */; };
 		45A3D6311DE19156005B91A6 /* BNKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4535D21A1DDC547800C9677A /* BNKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45A4CC591DE1FCEF008F625B /* CanHandleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */; };
 		45B928BF1DDD3E2900BDCB41 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */; };
 		45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */; };
 		45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */; };
@@ -113,6 +114,7 @@
 		4535D2421DDD387000C9677A /* Dictionary+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
 		4535D2441DDD38C100C9677A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		45A3D62D1DE0A749005B91A6 /* Number+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+random.swift"; sourceTree = "<group>"; };
+		45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanHandleNotification.swift; sourceTree = "<group>"; };
 		45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
 		45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc_Value.swift"; sourceTree = "<group>"; };
 		45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				45B928F11DDD546100BDCB41 /* NSObject+Rx.swift */,
+				45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */,
 				45B928DB1DDD4FA000BDCB41 /* Collection+Rx.swift */,
 				45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */,
 				45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */,
@@ -622,6 +625,7 @@
 				4535D2431DDD387000C9677A /* Dictionary+.swift in Sources */,
 				45B928CC1DDD42F100BDCB41 /* UIView+IBInspectable.swift in Sources */,
 				45EAAE531DDD881600FC7B6F /* TipView.swift in Sources */,
+				45A4CC591DE1FCEF008F625B /* CanHandleNotification.swift in Sources */,
 				45B928FE1DDD5D7400BDCB41 /* CoreGraphics+.swift in Sources */,
 				45B928CE1DDD435E00BDCB41 /* UIView+Animation.swift in Sources */,
 				45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */,

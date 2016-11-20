@@ -14,7 +14,7 @@ public protocol HasDisposeBag {
     var disposeBag: DisposeBag { get }
 }
 
-extension NSObject: HasDisposeBag {
+extension HasDisposeBag where Self: NSObject {
     
     public var disposeBag: DisposeBag {
         
@@ -29,23 +29,10 @@ extension NSObject: HasDisposeBag {
     }
 }
 
+extension NSObject: HasDisposeBag {}
+
 private enum AssociatedKeys {
     static var disposeBag = "disposeBag"
 }
 
-public protocol CanHandleNotification {}
-extension NSObject: CanHandleNotification {}
 
-extension CanHandleNotification where Self: HasDisposeBag {
-    
-    public func observe(forNotification name: Notification.Name, sender: AnyObject? = nil, didReceive: @escaping ([AnyHashable : Any]?) -> Void) {
-        NotificationCenter.default.rx.notification(name, object: sender).map { $0.userInfo }
-            .subscribe(onNext: didReceive)
-            .addDisposableTo(disposeBag)
-    }
-    
-    public func post(notification name: Notification.Name, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {
-        let object = object ?? self
-        NotificationCenter.default.post(name: name, object: object, userInfo: userInfo)
-    }
-}
