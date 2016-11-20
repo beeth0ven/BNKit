@@ -27,13 +27,18 @@ import Foundation
  
  ```
  */
-protocol IntegerHasRandom: Integer, IntegerArithmetic {
+public protocol IntegerHasRandom: Integer, IntegerArithmetic {
+    init(_ value: UInt32)
+    func toUInt32() -> UInt32
+}
+
+public protocol FloatingPointHasRandom: FloatingPoint {
     init(_ value: UInt32)
     func toUInt32() -> UInt32
 }
 
 extension Range where Bound: IntegerHasRandom {
-    func random() -> Bound {
+    public func random() -> Bound {
         let delta = upperBound - lowerBound
         return lowerBound + Bound(arc4random_uniform(delta.toUInt32()))
     }
@@ -41,20 +46,15 @@ extension Range where Bound: IntegerHasRandom {
 
 extension ClosedRange where Bound: IntegerHasRandom {
     
-    func random() -> Bound {
+    public func random() -> Bound {
         let delta = upperBound - lowerBound + 1
         return lowerBound + Bound(arc4random_uniform(delta.toUInt32()))
     }
 }
 
-protocol FloatingPointHasRandom: FloatingPoint {
-    init(_ value: UInt32)
-    func toUInt32() -> UInt32
-}
-
 extension Range where Bound: FloatingPointHasRandom {
     
-    func random() -> Bound {
+    public func random() -> Bound {
         let delta = upperBound - lowerBound, randomOne = Bound(arc4random_uniform(UInt32.max)) / Bound(UInt32.max)
         return lowerBound + randomOne * delta
     }
@@ -62,7 +62,7 @@ extension Range where Bound: FloatingPointHasRandom {
 
 extension ClosedRange where Bound: FloatingPointHasRandom {
     
-    func random() -> Bound {
+    public func random() -> Bound {
         let delta = upperBound - lowerBound, randomOne = Bound(arc4random_uniform(UInt32.max)) / Bound(UInt32.max - 1)
         return lowerBound + randomOne * delta
     }
@@ -71,61 +71,61 @@ extension ClosedRange where Bound: FloatingPointHasRandom {
 // ------ IntegerHasRandom
 
 extension Int: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension Int8: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension Int16: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension Int32: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension Int64: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension UInt: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension UInt8: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension UInt16: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension UInt32: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension UInt64: IntegerHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
@@ -133,25 +133,25 @@ extension UInt64: IntegerHasRandom {
 // ------ FloatingPointHasRandom
 
 extension Float: FloatingPointHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension Float80: FloatingPointHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension Double: FloatingPointHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
 
 extension CGFloat: FloatingPointHasRandom {
-    func toUInt32() -> UInt32 {
+    public func toUInt32() -> UInt32 {
         return UInt32(self)
     }
 }
