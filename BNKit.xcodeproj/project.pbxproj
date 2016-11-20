@@ -113,6 +113,7 @@
 		4535D2421DDD387000C9677A /* Dictionary+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+.swift"; sourceTree = "<group>"; };
 		4535D2441DDD38C100C9677A /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		45A3D62D1DE0A749005B91A6 /* Number+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+random.swift"; sourceTree = "<group>"; };
+		45A3D6351DE196A0005B91A6 /* BNKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = BNKit.playground; path = Example/BNKit.playground; sourceTree = "<group>"; };
 		45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
 		45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc_Value.swift"; sourceTree = "<group>"; };
 		45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
@@ -188,6 +189,7 @@
 		4535D2101DDC547800C9677A = {
 			isa = PBXGroup;
 			children = (
+				45A3D6351DE196A0005B91A6 /* BNKit.playground */,
 				4535D21C1DDC547800C9677A /* BNKit */,
 				4535D22B1DDC55B500C9677A /* Example */,
 				4535D23E1DDC582100C9677A /* SupportingFiles */,
@@ -826,7 +828,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BDKUNMM63;
 				INFOPLIST_FILE = Example/Info.plist;
@@ -841,7 +843,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 26C42C3DCA5EC8BA3747E057 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6BDKUNMM63;
 				INFOPLIST_FILE = Example/Info.plist;
