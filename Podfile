@@ -4,7 +4,6 @@ use_frameworks!
 def common
     pod 'RxSwift',    '~> 3.0.0'
     pod 'RxCocoa',    '~> 3.0.0'
-    pod 'RxDataSources', '~> 1.0.0'
 end
 
 target 'BNKit' do
