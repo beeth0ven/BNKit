@@ -1,5 +1,3 @@
 /Pods/
 Podfile.lock
-BNKit.xcworkspace
-*.xcuserstate
 *.DS_Store 
