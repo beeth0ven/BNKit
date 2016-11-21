@@ -33,8 +33,8 @@ extension RegularPattern {
             valid: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         ),
         "chinesePhone": RegularPattern(
-            input: "[0-9]{0,11}",
-            valid: "[0-9]{11}"
+            input: "^$|^1\\d{0,10}$",
+            valid: "^1\\d{10}$"
         ),
         "code4": RegularPattern(  // 4 digit
             input: "[0-9]{0,4}",

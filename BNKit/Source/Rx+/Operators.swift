@@ -94,5 +94,4 @@ public func <-> <T>(property: ControlProperty<T>, variable: Variable<T>) -> Disp
     return Disposables.create(bindToUIDisposable, bindToVariable)
 }
 
-// }
 

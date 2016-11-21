@@ -17,3 +17,16 @@ extension Dictionary {
         }
     }
 }
+
+extension Dictionary where Value: OptionalType {
+    
+    func filterNil() -> [Key: Value.Wrapped] {
+        var result = Dictionary<Key, Value.Wrapped>()
+        for (key, optionalType) in self {
+            if let wrapped = optionalType.value {
+                result[key] = wrapped
+            }
+        }
+        return result
+    }
+}
