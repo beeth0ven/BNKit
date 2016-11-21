@@ -13,28 +13,20 @@ import RxCocoa
 import RxDataSources
 
 class ViewController: UIViewController {
-    
-    typealias Section = SectionModel<String, String>
-    
-    let dataSource = RxTableViewSectionedReloadDataSource<Section>()
-    
-    let rxText = Variable("")
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textField.rx.text.orEmpty --> observer { $0.title = $1 }
-        
-        textField.rx.textInput <-> variable { $0.rxText }
-        
-        rxText.asDriver() --> observer { print("rxText", $1) }
-        
-        let tableView = UITableView()
-        
-        Driver.just([Section]()) --> observer(tableView.rx.items(dataSource: dataSource))
-
+        Driver.just(["00", "11", "22"]) --> observer(tableView.rx.items(cellType: UITableViewCell.self)) { row, text, cell in
+            cell.textLabel?.text = text
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let text = try! tableView.rx.model(at: 0) as String
+        print("text", text)
     }
 }
-

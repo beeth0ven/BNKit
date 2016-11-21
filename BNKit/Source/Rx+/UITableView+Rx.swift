@@ -42,3 +42,11 @@ extension Reactive where Base: UITableView {
     }
 }
 
+
+extension Reactive where Base: UITableView {
+    
+    public func model<T>(at row: Int) throws -> T {
+        let indexPath = IndexPath(row: row, section: 0)
+        return try model(at: indexPath)
+    }
+}

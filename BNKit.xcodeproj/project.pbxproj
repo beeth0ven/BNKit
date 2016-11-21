@@ -23,6 +23,7 @@
 		45A3D6301DE19156005B91A6 /* BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4535D21A1DDC547800C9677A /* BNKit.framework */; };
 		45A3D6311DE19156005B91A6 /* BNKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4535D21A1DDC547800C9677A /* BNKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45A4CC591DE1FCEF008F625B /* CanHandleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */; };
+		45A4CC5B1DE3505D008F625B /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */; };
 		45B928BF1DDD3E2900BDCB41 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */; };
 		45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */; };
 		45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */; };
@@ -118,6 +119,7 @@
 		4581253F1DE2B09C002E3923 /* Operators+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Operators+.swift"; sourceTree = "<group>"; };
 		45A3D62D1DE0A749005B91A6 /* Number+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+random.swift"; sourceTree = "<group>"; };
 		45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanHandleNotification.swift; sourceTree = "<group>"; };
+		45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Rx.swift"; sourceTree = "<group>"; };
 		45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
 		45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc_Value.swift"; sourceTree = "<group>"; };
 		45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
 				45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */,
 				45B928E11DDD4FD000BDCB41 /* UITableView+Rx.swift */,
+				45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */,
 				45B928E51DDD4FE500BDCB41 /* UIViewController+Rx.swift */,
 				45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */,
 				45B928E61DDD4FE500BDCB41 /* UIView+Rx.swift */,
@@ -616,6 +619,7 @@
 				4535D2451DDD38C100C9677A /* Queue.swift in Sources */,
 				45B928F01DDD501000BDCB41 /* ComputedVariable.swift in Sources */,
 				45B928D21DDD43D200BDCB41 /* UIColor+Flat.swift in Sources */,
+				45A4CC5B1DE3505D008F625B /* UICollectionView+Rx.swift in Sources */,
 				45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */,
 				45B928D71DDD44D800BDCB41 /* ManagedObjectType.swift in Sources */,
 				45EAAE401DDD807A00FC7B6F /* MKPlacemark+.swift in Sources */,
