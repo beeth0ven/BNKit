@@ -138,12 +138,6 @@ extension Float: FloatingPointHasRandom {
     }
 }
 
-extension Float80: FloatingPointHasRandom {
-    public func toUInt32() -> UInt32 {
-        return UInt32(self)
-    }
-}
-
 extension Double: FloatingPointHasRandom {
     public func toUInt32() -> UInt32 {
         return UInt32(self)
