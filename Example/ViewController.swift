@@ -19,14 +19,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Driver.just(["00", "11", "22"]) --> observer(tableView.rx.items(cellType: UITableViewCell.self)) { row, text, cell in
-            cell.textLabel?.text = text
-        }
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let text = try! tableView.rx.model(at: 0) as String
-        print("text", text)
+//        Driver.just((0...30).map { "A\($0)" }) --> binder(tableView.rx.items(cellType: RxTableViewCell.self)) { row, text, cell in
+//            cell.textLabel?.text = text
+//            Observable<Int>.timer(10, scheduler: MainScheduler.instance).debug(text)
+//                --> cell.binding { cell, count in }
+//
+//            
+//        }
+        
+        Observable<TimeInterval>.timer(interval: 1, duration: 5)
+            .subscribe(
+                onNext: { remain in
+                    print("剩余：", remain)
+                },
+                onCompleted: {
+                    print("计时结束！")
+                }
+            )
+            .addDisposableTo(disposeBag)
     }
 }

@@ -78,29 +78,25 @@ public func --><DE: SharedSequenceConvertibleType, B, R1>(driver: DE, params: (b
 
 extension HasDisposeBag where Self: AnyObject {
     
-    public func observer<E>(binding: @escaping (Self, E) -> Void) -> (base: Self, observer: UIBindingObserver<Self, E>) {
+    public func binding<E>(_ binding: @escaping (Self, E) -> Void) -> (base: Self, observer: UIBindingObserver<Self, E>) {
         let observer = UIBindingObserver(UIElement: self, binding: binding)
         return (self, observer)
     }
     
-    public func observer<OR: ObserverType>(getter: @escaping (Self) -> OR) -> (base: Self, observer: OR) {
+    public func observer<OR: ObserverType>(_ getter: @escaping (Self) -> OR) -> (base: Self, observer: OR) {
         return (self, getter(self))
     }
     
-    public func observer<E>(getter: @escaping (Self) -> Variable<E>) -> (base: Self, variable: Variable<E>) {
-        return (self, getter(self))
-    }
-    
-    public func observer<OE: ObservableType>(_ binder: @escaping (OE) -> Disposable) -> (base: Self, binder: (OE) -> Disposable) {
+    public func binder<OE: ObservableType>(_ binder: @escaping (OE) -> Disposable) -> (base: Self, binder: (OE) -> Disposable) {
         return (self, binder)
     }
     
-    public func observer<OE: ObservableType, R1>(_ binder: @escaping (OE) -> (R1) -> Disposable, curriedArgument: R1) -> (base: Self, binder: (OE) -> (R1) -> Disposable, curriedArgument: R1) {
+    public func binder<OE: ObservableType, R1>(_ binder: @escaping (OE) -> (R1) -> Disposable, curriedArgument: R1) -> (base: Self, binder: (OE) -> (R1) -> Disposable, curriedArgument: R1) {
         return (self, binder, curriedArgument)
     }
     
     public func variable<E>(getter: @escaping (Self) -> Variable<E>) -> (base: Self, variable: Variable<E>) {
-        return observer(getter: getter)
+        return (self, getter(self))
     }
 }
 

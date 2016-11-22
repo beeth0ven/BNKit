@@ -14,34 +14,15 @@ open class RxCollectionViewCell: UICollectionViewCell {
     
     override open func prepareForReuse() {
         super.prepareForReuse()
-        prepareForReuseDisposeBag = DisposeBag()
+        disposeBag = DisposeBag()
     }
-    
-    public private(set) var prepareForReuseDisposeBag = DisposeBag()
 }
 
 open class RxTableViewCell: UITableViewCell {
     
     override open func prepareForReuse() {
         super.prepareForReuse()
-        prepareForReuseDisposeBag = DisposeBag()
-    }
-    
-    public private(set) var prepareForReuseDisposeBag = DisposeBag()
-
-}
-
-
-extension RxCollectionViewCell {
-    
-    public var disposeBag: DisposeBag {
-        return prepareForReuseDisposeBag
+        disposeBag = DisposeBag()
     }
 }
 
-extension RxTableViewCell {
-    
-    public var disposeBag: DisposeBag {
-        return prepareForReuseDisposeBag
-    }
-}

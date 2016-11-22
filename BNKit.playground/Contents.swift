@@ -5,3 +5,7 @@
 import BNKit
 import RxSwift
 import RxCocoa
+
+
+let disposeBag = DisposeBag()
+

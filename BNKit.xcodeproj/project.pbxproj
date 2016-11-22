@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FD6B06AE5B4E2B0CC792F8D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */; };
+		4511E4091DE49DFC0026C975 /* Observable+timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511E4081DE49DFC0026C975 /* Observable+timer.swift */; };
 		4535D21F1DDC547800C9677A /* BNKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4535D21D1DDC547800C9677A /* BNKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4535D22D1DDC55B500C9677A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22C1DDC55B500C9677A /* AppDelegate.swift */; };
 		4535D22F1DDC55B500C9677A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22E1DDC55B500C9677A /* ViewController.swift */; };
@@ -102,6 +103,7 @@
 		003D51BF66C4C30A8B1DBB9C /* Pods-BNKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BNKit/Pods-BNKit.debug.xcconfig"; sourceTree = "<group>"; };
 		26C42C3DCA5EC8BA3747E057 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		3648547F319699904FE3D426 /* Pods-BNKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BNKit/Pods-BNKit.release.xcconfig"; sourceTree = "<group>"; };
+		4511E4081DE49DFC0026C975 /* Observable+timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+timer.swift"; sourceTree = "<group>"; };
 		4535D21A1DDC547800C9677A /* BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4535D21D1DDC547800C9677A /* BNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNKit.h; sourceTree = "<group>"; };
 		4535D21E1DDC547800C9677A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */,
 				45B928E61DDD4FE500BDCB41 /* UIView+Rx.swift */,
 				45B928E91DDD4FFE00BDCB41 /* ObservableType+.swift */,
+				4511E4081DE49DFC0026C975 /* Observable+timer.swift */,
 				45B928EB1DDD500400BDCB41 /* Operators.swift */,
 				4581253F1DE2B09C002E3923 /* Operators+.swift */,
 				45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */,
@@ -645,6 +648,7 @@
 				45B928EC1DDD500400BDCB41 /* Operators.swift in Sources */,
 				45EAAE311DDD7E3000FC7B6F /* UIResponder+Rx.swift in Sources */,
 				45EAAE491DDD81E000FC7B6F /* Bundle+Name.swift in Sources */,
+				4511E4091DE49DFC0026C975 /* Observable+timer.swift in Sources */,
 				45EAAE351DDD7E8700FC7B6F /* CLLocationManager+Rx.swift in Sources */,
 				45B928DC1DDD4FA000BDCB41 /* Collection+Rx.swift in Sources */,
 				45EAAE3C1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift in Sources */,
