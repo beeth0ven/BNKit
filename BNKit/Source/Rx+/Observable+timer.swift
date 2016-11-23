@@ -11,7 +11,7 @@ import RxCocoa
 
 extension Observable where Element: FloatingPoint {
     
-    public static func timer(interval: RxTimeInterval, duration: RxTimeInterval = RxTimeInterval.infinity, ascending: Bool = false, scheduler: SchedulerType = MainScheduler.instance)
+    public static func timer(duration: RxTimeInterval = RxTimeInterval.infinity, interval: RxTimeInterval = 1, ascending: Bool = false, scheduler: SchedulerType = MainScheduler.instance)
         -> Observable<TimeInterval> {
             let count = (duration == RxTimeInterval.infinity) ? .max : Int(duration / interval) + 1
             return Observable<Int>.timer(0, period: interval, scheduler: scheduler)

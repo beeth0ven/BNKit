@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 //            
 //        }
         
-        Observable<TimeInterval>.timer(interval: 1, duration: 5)
+        Observable<TimeInterval>.timer(duration: 5)
             .subscribe(
                 onNext: { remain in
                     print("剩余：", remain)

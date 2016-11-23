@@ -7,5 +7,14 @@ import RxSwift
 import RxCocoa
 
 
-let disposeBag = DisposeBag()
+let a = 1
 
+Observable<TimeInterval>.timer(duration: 5)
+    .subscribe(
+        onNext: { remain in
+            print("剩余：", remain)
+    },
+        onCompleted: {
+            print("计时结束！")
+    }
+)
