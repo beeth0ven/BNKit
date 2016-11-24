@@ -15,7 +15,6 @@
 		4535D2321DDC55B500C9677A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4535D2301DDC55B500C9677A /* Main.storyboard */; };
 		4535D2341DDC55B500C9677A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4535D2331DDC55B500C9677A /* Assets.xcassets */; };
 		4535D2371DDC55B500C9677A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4535D2351DDC55B500C9677A /* LaunchScreen.storyboard */; };
-		4535D23D1DDC581F00C9677A /* BNKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4535D23C1DDC581F00C9677A /* BNKit.podspec */; };
 		4535D2411DDD384200C9677A /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D2401DDD384200C9677A /* Array+.swift */; };
 		4535D2431DDD387000C9677A /* Dictionary+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D2421DDD387000C9677A /* Dictionary+.swift */; };
 		4535D2451DDD38C100C9677A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D2441DDD38C100C9677A /* Queue.swift */; };
@@ -510,7 +509,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45EAAE541DDD881600FC7B6F /* TipView.xib in Resources */,
-				4535D23D1DDC581F00C9677A /* BNKit.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
