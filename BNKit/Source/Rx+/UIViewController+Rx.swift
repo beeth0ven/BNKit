@@ -12,15 +12,24 @@ import RxCocoa
 
 extension Reactive where Base: UIViewController {
     
-    public var dismiss: AnyObserver<Void> {
-        return UIBindingObserver(UIElement: base, binding: { (vc, _) in
+    public var dismiss: UIBindingObserver<Base, Void> {
+        return UIBindingObserver(UIElement: base) { (vc, _) in
             vc.presentingViewController?.dismiss(animated: true, completion: nil)
-        }).asObserver()
+        }
     }
     
-    public var pop: AnyObserver<Void> {
-        return UIBindingObserver(UIElement: base, binding: { (vc, _) in
+    public var pop: UIBindingObserver<Base, Void> {
+        return UIBindingObserver(UIElement: base) { (vc, _) in
             _ = vc.navigationController?.popViewController(animated: true)
-        }).asObserver()
+        }
+    }
+}
+
+
+extension Reactive where Base: UIViewController {
+    
+    public var viewDidLoad: Observable<Void> {
+        return methodInvoked(#selector(UIViewController.viewDidLoad))
+            .mapToVoid()
     }
 }
