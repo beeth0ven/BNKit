@@ -171,6 +171,7 @@
 		45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RightArrow+Rx.swift"; sourceTree = "<group>"; };
 		45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasReuseDisposeBag.swift; sourceTree = "<group>"; };
 		45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+HasReuseDisposeBag.swift"; sourceTree = "<group>"; };
+		45F3FDD61DE6E95900CE3489 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5082A996843511F8EB8C289F /* Pods_BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				4535D23C1DDC581F00C9677A /* BNKit.podspec */,
+				45F3FDD61DE6E95900CE3489 /* README.md */,
 			);
 			name = SupportingFiles;
 			sourceTree = "<group>";
