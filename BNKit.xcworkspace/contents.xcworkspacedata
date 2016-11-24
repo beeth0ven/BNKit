@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:BNKit.playground">
+      location = "group:BNKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:BNKit.xcodeproj">
+      location = "group:BNKit.playground">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

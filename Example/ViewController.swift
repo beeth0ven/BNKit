@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         
         Driver.just((0...30).map { "A\($0)" }) --> binder(tableView.rx.items()) { (row, text, cell: UITableViewCell) in
             cell.textLabel?.text = text
-            Observable<Int>.timer(10, scheduler: MainScheduler.instance).debug(text)
+            
+            Observable<TimeInterval>.timer(interval: 10, ascending: true).debug(text)
                 --> cell.binding { cell, count in }
             
         }
