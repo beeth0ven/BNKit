@@ -49,7 +49,7 @@ extension RegularPattern {
             valid: "[0-9]{1,}"
         ),
         "double": RegularPattern(
-            input: "^-?(?:0|[1-9]\\d{0,2}(?:,?\\d{3})*)(?:\\.\\d+)?$",
+            input: "[0-9.]{0,320}",
             valid: "^-?(?:0|[1-9]\\d{0,2}(?:,?\\d{3})*)(?:\\.\\d+)?$"
         )
     ]
