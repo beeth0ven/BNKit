@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FD6B06AE5B4E2B0CC792F8D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */; };
 		4511E4091DE49DFC0026C975 /* Observable+timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511E4081DE49DFC0026C975 /* Observable+timer.swift */; };
+		45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F0D1DE93AFE00846954 /* Cell+Init.swift */; };
 		4535D21F1DDC547800C9677A /* BNKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4535D21D1DDC547800C9677A /* BNKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4535D22D1DDC55B500C9677A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22C1DDC55B500C9677A /* AppDelegate.swift */; };
 		4535D22F1DDC55B500C9677A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22E1DDC55B500C9677A /* ViewController.swift */; };
@@ -104,6 +105,7 @@
 		26C42C3DCA5EC8BA3747E057 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		3648547F319699904FE3D426 /* Pods-BNKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BNKit/Pods-BNKit.release.xcconfig"; sourceTree = "<group>"; };
 		4511E4081DE49DFC0026C975 /* Observable+timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+timer.swift"; sourceTree = "<group>"; };
+		45199F0D1DE93AFE00846954 /* Cell+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Init.swift"; sourceTree = "<group>"; };
 		4535D21A1DDC547800C9677A /* BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4535D21D1DDC547800C9677A /* BNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNKit.h; sourceTree = "<group>"; };
 		4535D21E1DDC547800C9677A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				45EAAE501DDD881600FC7B6F /* TipView */,
 				45B928F31DDD55C300BDCB41 /* RegularExpression */,
 				45B928C71DDD428F00BDCB41 /* CellSelfSized.swift */,
+				45199F0D1DE93AFE00846954 /* Cell+Init.swift */,
 				45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */,
 				45EAAE431DDD80FA00FC7B6F /* ViewControllerType.swift */,
 				45EAAE411DDD80EF00FC7B6F /* ViewType.swift */,
@@ -624,6 +627,7 @@
 				4535D2451DDD38C100C9677A /* Queue.swift in Sources */,
 				45B928F01DDD501000BDCB41 /* ComputedVariable.swift in Sources */,
 				45B928D21DDD43D200BDCB41 /* UIColor+Flat.swift in Sources */,
+				45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */,
 				45A4CC5B1DE3505D008F625B /* UICollectionView+Rx.swift in Sources */,
 				45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */,
 				45B928D71DDD44D800BDCB41 /* ManagedObjectType.swift in Sources */,
