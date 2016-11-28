@@ -10,6 +10,30 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+
+extension ComputedVariable {
+    
+    public func asDriver() -> Driver<E> {
+        return self.asObservable()
+            .asDriver(onErrorDriveWith: .empty())
+    }
+}
+
+extension ComputedVariable {
+    
+    public convenience init(userDefaultskey: String, default: Element) {
+        self.init(
+            getter: {
+                UserDefaults.standard.value(forKey: userDefaultskey) as? Element ?? `default`
+            },
+            setter: {
+                UserDefaults.standard.setValue($0, forKey: userDefaultskey)
+                UserDefaults.standard.synchronize()
+            }
+        )
+    }
+}
+
 extension ObservableType {
     
     public func bindTo(_ variable: ComputedVariable<E>) -> Disposable {
