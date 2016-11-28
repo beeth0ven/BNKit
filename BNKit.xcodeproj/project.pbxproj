@@ -54,6 +54,7 @@
 		45B928FE1DDD5D7400BDCB41 /* CoreGraphics+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928FD1DDD5D7400BDCB41 /* CoreGraphics+.swift */; };
 		45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */; };
 		45B929021DDD5E2F00BDCB41 /* NSJSONSerialization+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */; };
+		45CB64F71DEC6BBA000097C7 /* ComputedVariable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CB64F61DEC6BBA000097C7 /* ComputedVariable+.swift */; };
 		45EAAE311DDD7E3000FC7B6F /* UIResponder+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */; };
 		45EAAE341DDD7E8700FC7B6F /* MKMapView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */; };
 		45EAAE351DDD7E8700FC7B6F /* CLLocationManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */; };
@@ -153,6 +154,7 @@
 		45B928FD1DDD5D7400BDCB41 /* CoreGraphics+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+.swift"; sourceTree = "<group>"; };
 		45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlist.swift; sourceTree = "<group>"; };
 		45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSJSONSerialization+.swift"; sourceTree = "<group>"; };
+		45CB64F61DEC6BBA000097C7 /* ComputedVariable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ComputedVariable+.swift"; sourceTree = "<group>"; };
 		45EAAE301DDD7E3000FC7B6F /* UIResponder+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Rx.swift"; sourceTree = "<group>"; };
 		45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+Rx.swift"; sourceTree = "<group>"; };
 		45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Rx.swift"; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				45B928DB1DDD4FA000BDCB41 /* Collection+Rx.swift */,
 				45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */,
 				45B928EF1DDD501000BDCB41 /* ComputedVariable.swift */,
+				45CB64F61DEC6BBA000097C7 /* ComputedVariable+.swift */,
 				45EAAE331DDD7E8700FC7B6F /* CLLocationManager+Rx.swift */,
 				45EAAE3B1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift */,
 				45B928F11DDD546100BDCB41 /* HasDisposeBag.swift */,
@@ -614,6 +617,7 @@
 				45B928E31DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift in Sources */,
 				4535D2411DDD384200C9677A /* Array+.swift in Sources */,
 				45EAAE3A1DDD7FBB00FC7B6F /* UIApplication+.swift in Sources */,
+				45CB64F71DEC6BBA000097C7 /* ComputedVariable+.swift in Sources */,
 				45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */,
 				45B928C81DDD428F00BDCB41 /* CellSelfSized.swift in Sources */,
 				45B928FA1DDD55C300BDCB41 /* RegularExpressionTextView.swift in Sources */,

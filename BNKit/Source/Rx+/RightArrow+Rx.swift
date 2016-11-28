@@ -32,6 +32,14 @@ public func --><OE: ObservableType>(observable: OE, params: (disposeBag: Dispose
         observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
 }
 
+public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: ComputedVariable<OE.E>)){
+    observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
+}
+
+public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: ComputedVariable<OE.E?>)) {
+    observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
+}
+
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, binder: (OE) -> Disposable)) {
         observable.bindTo(params.binder).addDisposableTo(params.disposeBag)
 }
@@ -58,6 +66,16 @@ public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeB
 }
 
 public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: Variable<DE.E?>))
+    where DE.SharingStrategy == DriverSharingStrategy {
+        driver.drive(params.variable).addDisposableTo(params.disposeBag)
+}
+
+public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: ComputedVariable<DE.E>))
+    where DE.SharingStrategy == DriverSharingStrategy {
+        driver.drive(params.variable).addDisposableTo(params.disposeBag)
+}
+
+public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: ComputedVariable<DE.E?>))
     where DE.SharingStrategy == DriverSharingStrategy {
         driver.drive(params.variable).addDisposableTo(params.disposeBag)
 }
@@ -94,6 +112,10 @@ extension HasDisposeBag where Self: AnyObject {
     }
     
     public func variable<E>(getter: @escaping (Self) -> Variable<E>) -> (disposeBag: DisposeBag, variable: Variable<E>) {
+        return (disposeBag, getter(self))
+    }
+    
+    public func variable<E>(getter: @escaping (Self) -> ComputedVariable<E>) -> (disposeBag: DisposeBag, variable: ComputedVariable<E>) {
         return (disposeBag, getter(self))
     }
 }
