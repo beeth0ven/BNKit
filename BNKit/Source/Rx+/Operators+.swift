@@ -10,12 +10,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-public func <-> <B, T>(property: ControlProperty<T>, params: (base: B, variable: Variable<T>))
-    where B: HasDisposeBag, B: AnyObject {
-    (property <-> params.variable).addDisposableTo(params.base.disposeBag)
+public func <-> <T>(property: ControlProperty<T>, params: (disposeBag: DisposeBag, variable: Variable<T>)) {
+    (property <-> params.variable).addDisposableTo(params.disposeBag)
 }
 
-public func <-> <B, T>(textInput: TextInput<T>, params: (base: B, variable: Variable<String>))
-    where B: HasDisposeBag, B: AnyObject {
-        (textInput <-> params.variable).addDisposableTo(params.base.disposeBag)
+public func <-> <T>(textInput: TextInput<T>, params: (disposeBag: DisposeBag, variable: Variable<String>)) {
+    (textInput <-> params.variable).addDisposableTo(params.disposeBag)
 }

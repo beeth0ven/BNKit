@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension Array {
     
     public func element(at index: Index) -> Element? {
@@ -26,5 +25,13 @@ extension Array {
         if let index = index(where: predicate) {
             self.remove(at: index)
         }
+    }
+}
+
+extension Array where Element: OptionalType {
+    
+    func filterNil() -> [Element.Wrapped] {
+        return filter { $0.value != nil }
+            .map { $0.value! }
     }
 }
