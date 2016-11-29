@@ -16,3 +16,8 @@ public enum InfoPlist {
         return info.value(forKeyPath: keyPath)
     }
 }
+
+extension InfoPlist {
+    
+    static let appVersion = value(forKeyPath: "CFBundleShortVersionString") as! String
+}
