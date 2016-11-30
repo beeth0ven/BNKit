@@ -27,7 +27,6 @@
 		45A4CC591DE1FCEF008F625B /* CanHandleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */; };
 		45A4CC5B1DE3505D008F625B /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */; };
 		45B928BF1DDD3E2900BDCB41 /* TimeInterval+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */; };
-		45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */; };
 		45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */; };
 		45B928C81DDD428F00BDCB41 /* CellSelfSized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C71DDD428F00BDCB41 /* CellSelfSized.swift */; };
 		45B928CA1DDD42E300BDCB41 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928C91DDD42E300BDCB41 /* UIViewController+Alert.swift */; };
@@ -76,6 +75,8 @@
 		45EE28691DE29F9C009F866E /* RightArrow+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */; };
 		45F3FDD21DE681DD00CE3489 /* HasReuseDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */; };
 		45F3FDD41DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */; };
+		45F62FED1DEF0BEA00E4B2A5 /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FEC1DEF0BEA00E4B2A5 /* Objective.swift */; };
+		45F62FF11DEF136300E4B2A5 /* NSObject+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */; };
 		7EBE7D5D4BA6CC61E61B1566 /* Pods_BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082A996843511F8EB8C289F /* Pods_BNKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -129,7 +130,6 @@
 		45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanHandleNotification.swift; sourceTree = "<group>"; };
 		45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Rx.swift"; sourceTree = "<group>"; };
 		45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+.swift"; sourceTree = "<group>"; };
-		45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc_Value.swift"; sourceTree = "<group>"; };
 		45B928C51DDD415800BDCB41 /* UIStoryboard+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Name.swift"; sourceTree = "<group>"; };
 		45B928C71DDD428F00BDCB41 /* CellSelfSized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSelfSized.swift; sourceTree = "<group>"; };
 		45B928C91DDD42E300BDCB41 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
@@ -179,6 +179,8 @@
 		45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasReuseDisposeBag.swift; sourceTree = "<group>"; };
 		45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+HasReuseDisposeBag.swift"; sourceTree = "<group>"; };
 		45F3FDD61DE6E95900CE3489 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		45F62FEC1DEF0BEA00E4B2A5 /* Objective.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
+		45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc.swift"; sourceTree = "<group>"; };
 		5082A996843511F8EB8C289F /* Pods_BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -283,8 +285,9 @@
 				45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */,
 				45A3D62D1DE0A749005B91A6 /* Number+random.swift */,
 				45B929011DDD5E2F00BDCB41 /* NSJSONSerialization+.swift */,
-				45B928C01DDD3E7100BDCB41 /* NSObject+objc_Value.swift */,
+				45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */,
 				45EAAE4E1DDD863A00FC7B6F /* Operator+.swift */,
+				45F62FEC1DEF0BEA00E4B2A5 /* Objective.swift */,
 				4535D2441DDD38C100C9677A /* Queue.swift */,
 				45B928BE1DDD3E2900BDCB41 /* TimeInterval+.swift */,
 			);
@@ -662,8 +665,8 @@
 				45B928FE1DDD5D7400BDCB41 /* CoreGraphics+.swift in Sources */,
 				45B928CE1DDD435E00BDCB41 /* UIView+Animation.swift in Sources */,
 				45F3FDD41DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift in Sources */,
-				45B928C11DDD3E7100BDCB41 /* NSObject+objc_Value.swift in Sources */,
 				45EAAE4D1DDD857C00FC7B6F /* DateFormatter+.swift in Sources */,
+				45F62FED1DEF0BEA00E4B2A5 /* Objective.swift in Sources */,
 				45EAAE561DDD893300FC7B6F /* UIView+.swift in Sources */,
 				45B928EC1DDD500400BDCB41 /* Operators.swift in Sources */,
 				45EAAE311DDD7E3000FC7B6F /* UIResponder+Rx.swift in Sources */,
@@ -675,6 +678,7 @@
 				45B928F91DDD55C300BDCB41 /* RegularExpressionTextField.swift in Sources */,
 				45B928CA1DDD42E300BDCB41 /* UIViewController+Alert.swift in Sources */,
 				45B928E41DDD4FD000BDCB41 /* UITableView+Rx.swift in Sources */,
+				45F62FF11DEF136300E4B2A5 /* NSObject+objc.swift in Sources */,
 				45EE28691DE29F9C009F866E /* RightArrow+Rx.swift in Sources */,
 				45B928EE1DDD500C00BDCB41 /* Optional+Rx.swift in Sources */,
 				45B929021DDD5E2F00BDCB41 /* NSJSONSerialization+.swift in Sources */,

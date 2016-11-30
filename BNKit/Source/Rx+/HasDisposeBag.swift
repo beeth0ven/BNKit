@@ -17,15 +17,15 @@ public protocol HasDisposeBag {
 
 extension NSObject: HasDisposeBag {}
 
-extension HasDisposeBag where Self: NSObject {
+extension HasDisposeBag where Self: ObjectiveCompatible, Self: NSObject {
 
     public var disposeBag: DisposeBag {
-        switch objc_getValue(key: &AssociatedKeys.disposeBag) {
+        switch objc.value(forKey: &AssociatedKeys.disposeBag) {
         case let disposeBag as DisposeBag:
             return disposeBag
         default:
             let disposeBag = DisposeBag()
-            objc_set(value: disposeBag, key: &AssociatedKeys.disposeBag)
+            objc.set(value: disposeBag, forKey: &AssociatedKeys.disposeBag)
             return disposeBag
         }
     }
