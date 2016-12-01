@@ -11,6 +11,7 @@
 		4511E4091DE49DFC0026C975 /* Observable+timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511E4081DE49DFC0026C975 /* Observable+timer.swift */; };
 		45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F0D1DE93AFE00846954 /* Cell+Init.swift */; };
 		453449E91DEECBBB009C349E /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453449E81DEECBBB009C349E /* FileManager+.swift */; };
+		45344A001DEFFF94009C349E /* RxNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453449FF1DEFFF94009C349E /* RxNotification.swift */; };
 		4535D21F1DDC547800C9677A /* BNKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4535D21D1DDC547800C9677A /* BNKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4535D22D1DDC55B500C9677A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22C1DDC55B500C9677A /* AppDelegate.swift */; };
 		4535D22F1DDC55B500C9677A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22E1DDC55B500C9677A /* ViewController.swift */; };
@@ -111,6 +112,7 @@
 		4511E4081DE49DFC0026C975 /* Observable+timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+timer.swift"; sourceTree = "<group>"; };
 		45199F0D1DE93AFE00846954 /* Cell+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Init.swift"; sourceTree = "<group>"; };
 		453449E81DEECBBB009C349E /* FileManager+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
+		453449FF1DEFFF94009C349E /* RxNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxNotification.swift; sourceTree = "<group>"; };
 		4535D21A1DDC547800C9677A /* BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4535D21D1DDC547800C9677A /* BNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNKit.h; sourceTree = "<group>"; };
 		4535D21E1DDC547800C9677A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -342,8 +344,9 @@
 				45B928EB1DDD500400BDCB41 /* Operators.swift */,
 				4581253F1DE2B09C002E3923 /* Operators+.swift */,
 				45B928ED1DDD500C00BDCB41 /* Optional+Rx.swift */,
-				45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */,
 				45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */,
+				45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */,
+				453449FF1DEFFF94009C349E /* RxNotification.swift */,
 				45B928E11DDD4FD000BDCB41 /* UITableView+Rx.swift */,
 				45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */,
 				45B928E51DDD4FE500BDCB41 /* UIViewController+Rx.swift */,
@@ -647,6 +650,7 @@
 				45B928D71DDD44D800BDCB41 /* ManagedObjectType.swift in Sources */,
 				45EAAE401DDD807A00FC7B6F /* MKPlacemark+.swift in Sources */,
 				45B928FB1DDD55C300BDCB41 /* RegularPattern.swift in Sources */,
+				45344A001DEFFF94009C349E /* RxNotification.swift in Sources */,
 				45B928E71DDD4FE500BDCB41 /* UIViewController+Rx.swift in Sources */,
 				45B928F21DDD546100BDCB41 /* HasDisposeBag.swift in Sources */,
 				45CB64F91DEDC510000097C7 /* ControlProperty+.swift in Sources */,

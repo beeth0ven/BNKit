@@ -17,4 +17,12 @@ extension DateFormatter {
         dateFormatter.timeStyle = timeStyle
         return dateFormatter.string(from: date)
     }
+    
+    static func string(from timeInterval: TimeInterval, dateFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = dateFormat
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
+        let date = Date(timeIntervalSince1970: timeInterval)
+        return dateFormatter.string(from: date)
+    }
 }
