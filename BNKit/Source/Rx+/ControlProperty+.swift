@@ -12,15 +12,16 @@ import RxCocoa
 
 extension ControlProperty {
     
-    public func map<R>(mapGetter: @escaping (E)-> R, mapSetter: @escaping (R) -> E) -> ControlProperty<R> {
-        let getter = map(mapGetter)
-        let setter = mapObserver(mapSetter)
+    public func map<R>(onObservale: @escaping (E) -> R, onObserver: @escaping (R) -> E) -> ControlProperty<R> {
+        let getter = map(onObservale)
+        let setter = mapObserver(onObserver)
         return ControlProperty<R>(values: getter, valueSink: setter)
     }
     
-    public func map<R: Equatable>(mapGetter: @escaping (E)-> R, mapSetter: @escaping (R) -> E) -> ControlProperty<R> {
-        let getter = map(mapGetter).distinctUntilChanged()
-        let setter = mapObserver(mapSetter)
+    public func map<R: Equatable>(onObservale: @escaping (E)-> R, onObserver: @escaping (R) -> E) -> ControlProperty<R> {
+        let getter = map(onObservale).distinctUntilChanged()
+        let setter = mapObserver(onObserver)
         return ControlProperty<R>(values: getter, valueSink: setter)
     }
 }
+
