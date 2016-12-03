@@ -19,21 +19,6 @@ extension ComputedVariable {
     }
 }
 
-extension ComputedVariable {
-    
-    public convenience init(userDefaultskey: String, default: Element) {
-        self.init(
-            getter: {
-                UserDefaults.standard.value(forKey: userDefaultskey) as? Element ?? `default`
-            },
-            setter: {
-                UserDefaults.standard.setValue($0, forKey: userDefaultskey)
-                UserDefaults.standard.synchronize()
-            }
-        )
-    }
-}
-
 extension ObservableType {
     
     public func bindTo(_ variable: ComputedVariable<E>) -> Disposable {

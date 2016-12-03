@@ -78,6 +78,7 @@
 		45F3FDD41DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */; };
 		45F62FED1DEF0BEA00E4B2A5 /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FEC1DEF0BEA00E4B2A5 /* Objective.swift */; };
 		45F62FF11DEF136300E4B2A5 /* NSObject+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */; };
+		45F62FF31DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FF21DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift */; };
 		7EBE7D5D4BA6CC61E61B1566 /* Pods_BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082A996843511F8EB8C289F /* Pods_BNKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -183,6 +184,7 @@
 		45F3FDD61DE6E95900CE3489 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45F62FEC1DEF0BEA00E4B2A5 /* Objective.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
 		45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc.swift"; sourceTree = "<group>"; };
+		45F62FF21DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Rx.swift"; sourceTree = "<group>"; };
 		5082A996843511F8EB8C289F /* Pods_BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 				45B928E61DDD4FE500BDCB41 /* UIView+Rx.swift */,
 				45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */,
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
+				45F62FF21DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift */,
 			);
 			path = "Rx+";
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				45B928D21DDD43D200BDCB41 /* UIColor+Flat.swift in Sources */,
 				45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */,
 				453449E91DEECBBB009C349E /* FileManager+.swift in Sources */,
+				45F62FF31DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift in Sources */,
 				45A4CC5B1DE3505D008F625B /* UICollectionView+Rx.swift in Sources */,
 				45B928C61DDD415800BDCB41 /* UIStoryboard+Name.swift in Sources */,
 				45B928D71DDD44D800BDCB41 /* ManagedObjectType.swift in Sources */,
