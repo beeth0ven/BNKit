@@ -12,6 +12,10 @@ import RxCocoa
 
 extension Reactive where Base: UserDefaults {
     
+    public func object<Object>(forKey key: String) -> ComputedVariable<Object?> {
+        return object(forKey: key, default: nil)
+    }
+    
     public func object<Object>(forKey key: String, default: Object) -> ComputedVariable<Object> {
         return ComputedVariable(
             getter: {

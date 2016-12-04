@@ -25,3 +25,13 @@ extension ControlProperty {
     }
 }
 
+extension ControlProperty {
+    
+    public func map<R>(_ transformer: Transformer<E, R>) -> ControlProperty<R> {
+        return map(onObservale: transformer.mapSource, onObserver: transformer.mapDestination)
+    }
+    
+    public func map<R: Equatable>(_ transformer: Transformer<E, R>) -> ControlProperty<R> {
+        return map(onObservale: transformer.mapSource, onObserver: transformer.mapDestination)
+    }
+}
