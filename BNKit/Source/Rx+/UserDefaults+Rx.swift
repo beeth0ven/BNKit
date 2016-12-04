@@ -12,13 +12,13 @@ import RxCocoa
 
 extension Reactive where Base: UserDefaults {
     
-    public func value<Value>(forKey key: String, default: Value) -> ComputedVariable<Value> {
-        return ComputedVariable<Value>(
+    public func object<Object>(forKey key: String, default: Object) -> ComputedVariable<Object> {
+        return ComputedVariable(
             getter: {
-                self.base.value(forKey: key) as? Value ?? `default`
+                self.base.object(forKey: key) as? Object ?? `default`
             },
             setter: {
-                self.base.setValue($0, forKey: key)
+                self.base.set($0, forKey: key)
                 self.base.synchronize()
             }
         )
