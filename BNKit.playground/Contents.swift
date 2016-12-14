@@ -7,6 +7,8 @@ import RxSwift
 import RxCocoa
 import UIKit
 
-// Filter -> SearchResult -> [Section] -> CellStyle -> Cell
-// Filter -async-> SearchResult -sync-> [Section] -sync-> CellStyle -sync-> Cell
-// Filter -> Observable<SearchResult> -> [Section] -> CellStyle -> Cell
+playgroundShouldContinueIndefinitely()
+
+Observable<TimeInterval>.timer(duration: 5, interval: 1)
+    .debug("timer")
+    .subscribe()
