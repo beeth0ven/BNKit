@@ -8,9 +8,9 @@
 
 import UIKit
 
-public protocol TableViewCellType {}
-extension UITableViewCell: TableViewCellType {}
-extension TableViewCellType where Self: UITableViewCell {
+public protocol IsTableViewCell {}
+extension UITableViewCell: IsTableViewCell {}
+extension IsTableViewCell where Self: UITableViewCell {
     /**
      ### Usage Example: ###
      ```swift
@@ -29,9 +29,13 @@ extension TableViewCellType where Self: UITableViewCell {
     }
 }
 
-public protocol CollectionViewCellType {}
-extension UICollectionViewCell: CollectionViewCellType {}
-extension CollectionViewCellType where Self: UICollectionViewCell {
+extension UITableViewCell {
+    
+}
+
+public protocol IsCollectionViewCell {}
+extension UICollectionViewCell: IsCollectionViewCell {}
+extension IsCollectionViewCell where Self: UICollectionViewCell {
     /**
      ### Usage Example: ###
      ```swift

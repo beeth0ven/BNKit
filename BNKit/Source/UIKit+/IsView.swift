@@ -1,5 +1,5 @@
 //
-//  ViewType.swift
+//  IsView.swift
 //  BNKit
 //
 //  Created by luojie on 2016/11/17.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-public protocol ViewType {}
-extension UIView: ViewType {}
-extension ViewType where Self: UIView {
+public protocol IsView {}
+extension UIView: IsView {}
+extension IsView where Self: UIView {
     
     public static func fromNib(bundle name: Bundle.Name? = nil) -> Self? {
         let nibName = String(describing: self), bundle = (name?.rawValue).flatMap(Bundle.init(identifier:)) ?? Bundle.main

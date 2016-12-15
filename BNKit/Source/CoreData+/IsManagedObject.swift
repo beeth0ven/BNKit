@@ -1,5 +1,5 @@
 //
-//  ManagedObjectType.swift
+//  IsManagedObject.swift
 //  WorkMap
 //
 //  Created by luojie on 16/10/25.
@@ -9,11 +9,11 @@
 import Foundation
 import CoreData
 
-public protocol ManagedObjectType: NSObjectProtocol {
+public protocol IsManagedObject: NSObjectProtocol {
     static var coreDataStack: CoreDataStack { get }
 }
 
-extension ManagedObjectType where Self: NSManagedObject {
+extension IsManagedObject where Self: NSManagedObject {
     
     public static func get(predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil) -> [Self] {
         let entityName = String(describing: self)

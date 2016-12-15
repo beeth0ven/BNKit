@@ -1,5 +1,5 @@
 //
-//  ViewControllerType.swift
+//  IsViewController.swift
 //  BNKit
 //
 //  Created by luojie on 2016/11/17.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-public protocol ViewControllerType {}
-extension UIViewController: ViewControllerType {}
-extension ViewControllerType where Self: UIViewController {
+public protocol IsViewController {}
+extension UIViewController: IsViewController {}
+extension IsViewController where Self: UIViewController {
     
     public static func from(storyBoard name: UIStoryboard.Name, bundle bundleName: Bundle.Name? = nil) -> Self {
         let identifier = String(describing: self), bundle = (bundleName?.rawValue).flatMap(Bundle.init(identifier:)) ?? Bundle.main
