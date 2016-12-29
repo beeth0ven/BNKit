@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class TipView: UIView {
+open class TipView: UIView, IsInBNKitBundle {
 
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var textLabel: UILabel!
@@ -98,5 +98,5 @@ extension TipView {
         shared.superview?.animateUpdate { shared.removeFromSuperview() }
     }
     
-    @nonobjc static let shared = TipView.fromNib(bundle: .BNKit)!
+    @nonobjc static let shared = TipView.fromNib()
 }

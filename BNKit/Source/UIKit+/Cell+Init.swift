@@ -20,18 +20,16 @@ extension IsTableViewCell where Self: UITableViewCell {
     }
      ```
      */
-    public static func from(_ tableView: UITableView) -> Self {
+    public static func from(_ tableView: UITableView, configure: ((Self) -> Void) = { _ in }) -> Self {
         let identifier = String(describing: self)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? Self else  {
             fatalError("Can't get \(identifier) from tableView!")
         }
+        configure(cell)
         return cell
     }
 }
 
-extension UITableViewCell {
-    
-}
 
 public protocol IsCollectionViewCell {}
 extension UICollectionViewCell: IsCollectionViewCell {}
@@ -42,16 +40,17 @@ extension IsCollectionViewCell where Self: UICollectionViewCell {
     let bannerCell = BannerCollectionViewCell.fromCollectionView(collectionView, forIndexPath: indexPath)
      ```
      */
-    public static func from(_ collectionView: UICollectionView, forIndexPath indexPath: IndexPath) -> Self {
+    public static func from(_ collectionView: UICollectionView, forIndexPath indexPath: IndexPath, configure: ((Self) -> Void) = { _ in }) -> Self {
         let identifier = String(describing: self)
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? Self else  {
             fatalError("Can't get \(identifier) from collectionView!")
         }
+        configure(cell)
         return cell
     }
     
-    public static func from(_ collectionView: UICollectionView, forIndex index: Int) -> Self {
+    public static func from(_ collectionView: UICollectionView, forIndex index: Int, configure: ((Self) -> Void) = { _ in }) -> Self {
         let indexPath = IndexPath(item: index, section: 0)
-        return self.from(collectionView, forIndexPath: indexPath)
+        return self.from(collectionView, forIndexPath: indexPath, configure: configure)
     }
 }
