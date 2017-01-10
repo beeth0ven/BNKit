@@ -12,6 +12,7 @@
 		45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F0D1DE93AFE00846954 /* Cell+Init.swift */; };
 		453449E91DEECBBB009C349E /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453449E81DEECBBB009C349E /* FileManager+.swift */; };
 		45344A001DEFFF94009C349E /* RxNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453449FF1DEFFF94009C349E /* RxNotification.swift */; };
+		45353DD91E252C7400B0CBF2 /* HasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45353DD81E252C7400B0CBF2 /* HasModel.swift */; };
 		4535D21F1DDC547800C9677A /* BNKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4535D21D1DDC547800C9677A /* BNKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4535D22D1DDC55B500C9677A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22C1DDC55B500C9677A /* AppDelegate.swift */; };
 		4535D22F1DDC55B500C9677A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535D22E1DDC55B500C9677A /* ViewController.swift */; };
@@ -117,6 +118,7 @@
 		45199F0D1DE93AFE00846954 /* Cell+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Init.swift"; sourceTree = "<group>"; };
 		453449E81DEECBBB009C349E /* FileManager+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
 		453449FF1DEFFF94009C349E /* RxNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxNotification.swift; sourceTree = "<group>"; };
+		45353DD81E252C7400B0CBF2 /* HasModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasModel.swift; sourceTree = "<group>"; };
 		4535D21A1DDC547800C9677A /* BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4535D21D1DDC547800C9677A /* BNKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNKit.h; sourceTree = "<group>"; };
 		4535D21E1DDC547800C9677A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				4535D2421DDD387000C9677A /* Dictionary+.swift */,
 				45EAAE4C1DDD857C00FC7B6F /* DateFormatter+.swift */,
 				453449E81DEECBBB009C349E /* FileManager+.swift */,
+				45353DD81E252C7400B0CBF2 /* HasModel.swift */,
 				45B928FF1DDD5DC300BDCB41 /* InfoPlist.swift */,
 				45CED7561E14B6C200B5A313 /* IsInBundle.swift */,
 				45A3D62D1DE0A749005B91A6 /* Number+random.swift */,
@@ -687,6 +690,7 @@
 				45EAAE3C1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift in Sources */,
 				45B928F91DDD55C300BDCB41 /* RegularExpressionTextField.swift in Sources */,
 				45CED7571E14B6C200B5A313 /* IsInBundle.swift in Sources */,
+				45353DD91E252C7400B0CBF2 /* HasModel.swift in Sources */,
 				45B928CA1DDD42E300BDCB41 /* UIViewController+Alert.swift in Sources */,
 				45B928E41DDD4FD000BDCB41 /* UITableView+Rx.swift in Sources */,
 				45F62FF11DEF136300E4B2A5 /* NSObject+objc.swift in Sources */,
