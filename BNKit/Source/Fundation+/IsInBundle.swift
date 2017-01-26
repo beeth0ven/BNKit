@@ -9,23 +9,28 @@
 import Foundation
 
 public protocol IsInBundle {
-    static var bundleIdentifier: String? { get }
+    
+    static var bundle: Bundle { get }
 }
 
 public extension IsInBundle {
-    static var bundleIdentifier: String? {
-        return nil
-    }
     
     static var bundle: Bundle {
-        return bundleIdentifier.flatMap(Bundle.init(identifier:)) ?? .main
+        return .main
     }
 }
 
 // --- IsInBNKitBundle---
+
+extension Bundle {
+    
+    static let BNKit = Bundle(identifier: "org.cocoapods.BNKit")!
+}
+
 protocol IsInBNKitBundle: IsInBundle {}
 extension IsInBNKitBundle {
-    public static var bundleIdentifier: String? {
-        return "org.cocoapods.BNKit"
+    
+    public static var bundleIdentifier: Bundle? {
+        return .BNKit
     }
 }

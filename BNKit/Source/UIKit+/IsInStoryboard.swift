@@ -3,26 +3,19 @@
 //  theatre
 //
 //  Created by luojie on 2016/12/29.
-//  Copyright © 2016年 @天意. All rights reserved.
+//  Copyright © 2016年 luojie. All rights reserved.
 //
 
 import UIKit
 
 public protocol IsInStoryboard: IsInBundle {
-    static var storyboardIdentifier: String { get }
-}
-
-public extension IsInStoryboard {
-    
-    static var storyboard: UIStoryboard {
-        return UIStoryboard(name: storyboardIdentifier, bundle: bundle)
-    }
+    static var staticStoryboard: UIStoryboard { get }
 }
 
 public extension IsInStoryboard where Self: UIViewController {
     
     static func fromStoryboard() -> Self {
-        return storyboard.instantiateViewController(withIdentifier: "\(self)") as! Self
+        return staticStoryboard.instantiateViewController(withIdentifier: "\(self)") as! Self
     }
 }
 
