@@ -178,20 +178,5 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 //dateInterval.end + Double((8 - dateInterval.end.weekday) % 7) * 1.0.days
 //
 
-extension UIStoryboard {
-    
-    func viewController<VC: UIViewController>(_ type: VC.Type) -> VC {
-        return instantiateInitialViewController() as! VC
-    }
-}
-
-extension UIViewController {
-
-    static func from(stroryboard: UIStoryboard) -> Self {
-        let vc = stroryboard.viewController(self)
-        return vc
-    }
-    
-}
 
 

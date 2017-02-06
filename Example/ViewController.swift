@@ -29,11 +29,3 @@ class ViewController: UIViewController {
         
     }
 }
-
-extension UIStoryboard.Name {
-    static let main = UIStoryboard.Name(rawValue: "Main")
-}
-
-extension Bundle.Identifier {
-    static let main = 
-}
