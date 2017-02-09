@@ -28,7 +28,7 @@ extension Reactive where Base: UITableView {
      .drive(tableView.rx.items(cellType: RxTableViewCell.self)) { index, invitation, cell in
         ...
      })
-     .addDisposableTo(cell.prepareForReuseDisposeBag)
+     .disposed(by: cell.prepareForReuseDisposeBag)
      }
      ```
      */

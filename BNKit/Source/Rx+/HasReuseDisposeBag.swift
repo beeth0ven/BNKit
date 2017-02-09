@@ -28,7 +28,7 @@ extension HasReuseDisposeBag where Self: NSObject, Self: ReactiveCompatible, Sel
                 .subscribe(onNext: { [unowned self] _ in
                     self.objc.set(value: nil, forKey: &Keys.reuseDisposeBag)
                 })
-                .addDisposableTo(disposeBag)
+                .disposed(by: disposeBag)
             return disposeBag
         }
     }

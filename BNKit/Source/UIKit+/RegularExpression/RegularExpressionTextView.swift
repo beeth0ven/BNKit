@@ -28,7 +28,7 @@ open class RegularExpressionTextView: PlaceholderTextView {
                     return
                 }
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
     }
     

@@ -16,78 +16,78 @@ infix operator --> : DefaultPrecedence
 
 public func --><OE: ObservableType, OR: ObserverType>(observable: OE, params: (disposeBag: DisposeBag, observer: OR))
     where OR.E == OE.E {
-        observable.bindTo(params.observer).addDisposableTo(params.disposeBag)
+        observable.bindTo(params.observer).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType, OR: ObserverType>(observable: OE, params: (disposeBag: DisposeBag, observer: OR))
     where OR.E == OE.E? {
-        observable.bindTo(params.observer).addDisposableTo(params.disposeBag)
+        observable.bindTo(params.observer).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: Variable<OE.E>)){
-        observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
+        observable.bindTo(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: Variable<OE.E?>)) {
-        observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
+        observable.bindTo(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: ComputedVariable<OE.E>)){
-    observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
+    observable.bindTo(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: ComputedVariable<OE.E?>)) {
-    observable.bindTo(params.variable).addDisposableTo(params.disposeBag)
+    observable.bindTo(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, binder: (OE) -> Disposable)) {
-        observable.bindTo(params.binder).addDisposableTo(params.disposeBag)
+        observable.bindTo(params.binder).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType, R1>(observable: OE, params: (disposeBag: DisposeBag, binder: (OE) -> (R1) -> Disposable, curriedArgument: R1)) {
-        observable.bindTo(params.binder, curriedArgument: params.curriedArgument).addDisposableTo(params.disposeBag)
+        observable.bindTo(params.binder, curriedArgument: params.curriedArgument).disposed(by: params.disposeBag)
 }
 
 // MARK: Driver --> ObserverType
 
 public func --><DE: SharedSequenceConvertibleType, OR: ObserverType>(driver: DE, params: (disposeBag: DisposeBag, observer: OR))
     where DE.SharingStrategy == DriverSharingStrategy, OR.E == DE.E {
-        driver.drive(params.observer).addDisposableTo(params.disposeBag)
+        driver.drive(params.observer).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType, OR: ObserverType>(driver: DE, params: (disposeBag: DisposeBag, observer: OR))
     where DE.SharingStrategy == DriverSharingStrategy, OR.E == DE.E? {
-        driver.drive(params.observer).addDisposableTo(params.disposeBag)
+        driver.drive(params.observer).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: Variable<DE.E>))
     where DE.SharingStrategy == DriverSharingStrategy {
-        driver.drive(params.variable).addDisposableTo(params.disposeBag)
+        driver.drive(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: Variable<DE.E?>))
     where DE.SharingStrategy == DriverSharingStrategy {
-        driver.drive(params.variable).addDisposableTo(params.disposeBag)
+        driver.drive(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: ComputedVariable<DE.E>))
     where DE.SharingStrategy == DriverSharingStrategy {
-        driver.drive(params.variable).addDisposableTo(params.disposeBag)
+        driver.drive(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, variable: ComputedVariable<DE.E?>))
     where DE.SharingStrategy == DriverSharingStrategy {
-        driver.drive(params.variable).addDisposableTo(params.disposeBag)
+        driver.drive(params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType>(driver: DE, params: (disposeBag: DisposeBag, binder: (Observable<DE.E>) -> Disposable))
     where DE.SharingStrategy == DriverSharingStrategy {
-        driver.drive(params.binder).addDisposableTo(params.disposeBag)
+        driver.drive(params.binder).disposed(by: params.disposeBag)
 }
 
 public func --><DE: SharedSequenceConvertibleType, R1>(driver: DE, params: (disposeBag: DisposeBag, binder: (Observable<DE.E>) -> (R1) -> Disposable, curriedArgument: R1))
     where DE.SharingStrategy == DriverSharingStrategy {
-        driver.drive(params.binder, curriedArgument: params.curriedArgument).addDisposableTo(params.disposeBag)
+        driver.drive(params.binder, curriedArgument: params.curriedArgument).disposed(by: params.disposeBag)
 }
 
 // MARK: HasDisposeBag + binding

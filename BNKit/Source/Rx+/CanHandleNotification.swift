@@ -18,7 +18,7 @@ extension CanHandleNotification where Self: HasDisposeBag {
     public func observe(forNotification name: Notification.Name, sender: AnyObject? = nil, didReceive: @escaping ([AnyHashable : Any]?) -> Void) {
         NotificationCenter.default.rx.notification(name, object: sender).map { $0.userInfo }
             .subscribe(onNext: didReceive)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     public func post(notification name: Notification.Name, object: Any? = nil, userInfo: [AnyHashable: Any]? = nil) {

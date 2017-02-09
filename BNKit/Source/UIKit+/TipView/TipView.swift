@@ -23,7 +23,7 @@ open class TipView: UIView, IsInBNKitBundle {
         
         state.asDriver()
             .drive(stateOberver)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
         delayDismiss.asObservable()
             .flatMapLatest { delay -> Observable<Void> in
@@ -37,7 +37,7 @@ open class TipView: UIView, IsInBNKitBundle {
                 }
             }
             .bindTo(rx_remove)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
     }
     

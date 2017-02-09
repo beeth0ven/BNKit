@@ -28,7 +28,7 @@ open class RegularExpressionTextField: UITextField {
                     return
                 }
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     open var isValid: Observable<Bool> {

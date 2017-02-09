@@ -105,9 +105,9 @@ public func <-> <T>(property: ControlProperty<T>, variable: ComputedVariable<T>)
 }
 
 public func <-> <T>(property: ControlProperty<T>, params: (disposeBag: DisposeBag, variable: ComputedVariable<T>)) {
-    (property <-> params.variable).addDisposableTo(params.disposeBag)
+    (property <-> params.variable).disposed(by: params.disposeBag)
 }
 
 public func <-> <T>(textInput: TextInput<T>, params: (disposeBag: DisposeBag, variable: ComputedVariable<String>)) {
-    (textInput <-> params.variable).addDisposableTo(params.disposeBag)
+    (textInput <-> params.variable).disposed(by: params.disposeBag)
 }
