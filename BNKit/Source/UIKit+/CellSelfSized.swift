@@ -12,9 +12,7 @@ extension UITableView {
     
     @IBInspectable
     public var cellSelfSized: Bool {
-        
         get {
-            
             return rowHeight == UITableViewAutomaticDimension
         }
         set(enable) {
@@ -30,15 +28,12 @@ extension UICollectionView {
     
     @IBInspectable
     public var cellSelfSized: Bool {
-        
         get {
-            
             guard let layout = collectionViewLayout as? UICollectionViewFlowLayout else { return false }
             return layout.estimatedItemSize != CGSize.zero
         }
         set(enable) {
             if enable {
-                
                 guard let layout = collectionViewLayout as? UICollectionViewFlowLayout else { return }
                 layout.estimatedItemSize = layout.itemSize
             }
