@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         Driver.just((0...30).map { "A\($0)" }) --> binder(tableView.rx.items()) { (row, text, cell: UITableViewCell) in
             cell.textLabel?.text = text
             

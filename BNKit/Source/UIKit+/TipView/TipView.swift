@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-open class TipView: UIView, IsInBNKitBundle {
+open class TipView: UIView, IsInBundle {
 
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var textLabel: UILabel!

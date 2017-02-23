@@ -13,24 +13,9 @@ public protocol IsInBundle {
     static var bundle: Bundle { get }
 }
 
-public extension IsInBundle {
+public extension IsInBundle where Self: AnyObject {
     
     static var bundle: Bundle {
-        return .main
-    }
-}
-
-// --- IsInBNKitBundle---
-
-extension Bundle {
-    
-    static let BNKit = Bundle(identifier: "org.cocoapods.BNKit")!
-}
-
-protocol IsInBNKitBundle: IsInBundle {}
-extension IsInBNKitBundle {
-    
-    public static var bundleIdentifier: Bundle? {
-        return .BNKit
+        return Bundle(for: Self.self)
     }
 }
