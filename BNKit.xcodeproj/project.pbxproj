@@ -83,6 +83,8 @@
 		45F62FF11DEF136300E4B2A5 /* NSObject+objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */; };
 		45F62FF31DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FF21DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift */; };
 		45F62FF51DF3B71500E4B2A5 /* NSObject+RxValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FF41DF3B71500E4B2A5 /* NSObject+RxValue.swift */; };
+		45FFFA931E62CC3700E3FF43 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FFFA921E62CC3700E3FF43 /* UIImage+.swift */; };
+		45FFFA951E62CC7600E3FF43 /* UIBar+SeparatorHiden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FFFA941E62CC7600E3FF43 /* UIBar+SeparatorHiden.swift */; };
 		7EBE7D5D4BA6CC61E61B1566 /* Pods_BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5082A996843511F8EB8C289F /* Pods_BNKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +195,8 @@
 		45F62FF01DEF136300E4B2A5 /* NSObject+objc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+objc.swift"; sourceTree = "<group>"; };
 		45F62FF21DF2C2DB00E4B2A5 /* UserDefaults+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Rx.swift"; sourceTree = "<group>"; };
 		45F62FF41DF3B71500E4B2A5 /* NSObject+RxValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+RxValue.swift"; sourceTree = "<group>"; };
+		45FFFA921E62CC3700E3FF43 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		45FFFA941E62CC7600E3FF43 /* UIBar+SeparatorHiden.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBar+SeparatorHiden.swift"; sourceTree = "<group>"; };
 		5082A996843511F8EB8C289F /* Pods_BNKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BNKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC356473473655EEC57120C /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -318,13 +322,15 @@
 				45199F0D1DE93AFE00846954 /* Cell+Init.swift */,
 				45EAAE411DDD80EF00FC7B6F /* IsInBundle+UIView.swift */,
 				45CED7581E14B6CC00B5A313 /* IsInStoryboard.swift */,
+				45EAAE391DDD7FBB00FC7B6F /* UIApplication+.swift */,
+				45FFFA941E62CC7600E3FF43 /* UIBar+SeparatorHiden.swift */,
+				45B928CF1DDD437900BDCB41 /* UIColor+Hex.swift */,
+				45B928D11DDD43D200BDCB41 /* UIColor+Flat.swift */,
+				45FFFA921E62CC3700E3FF43 /* UIImage+.swift */,
 				45B928C91DDD42E300BDCB41 /* UIViewController+Alert.swift */,
 				45B928CB1DDD42F100BDCB41 /* UIView+IBInspectable.swift */,
 				45B928CD1DDD435E00BDCB41 /* UIView+Animation.swift */,
 				45EAAE551DDD893300FC7B6F /* UIView+.swift */,
-				45B928CF1DDD437900BDCB41 /* UIColor+Hex.swift */,
-				45B928D11DDD43D200BDCB41 /* UIColor+Flat.swift */,
-				45EAAE391DDD7FBB00FC7B6F /* UIApplication+.swift */,
 			);
 			path = "UIKit+";
 			sourceTree = "<group>";
@@ -672,10 +678,12 @@
 				45B928D61DDD44D800BDCB41 /* CoreDataStack.swift in Sources */,
 				458125401DE2B09C002E3923 /* Operators+.swift in Sources */,
 				45B928D01DDD437900BDCB41 /* UIColor+Hex.swift in Sources */,
+				45FFFA951E62CC7600E3FF43 /* UIBar+SeparatorHiden.swift in Sources */,
 				4535D2431DDD387000C9677A /* Dictionary+.swift in Sources */,
 				45B928CC1DDD42F100BDCB41 /* UIView+IBInspectable.swift in Sources */,
 				45EAAE531DDD881600FC7B6F /* TipView.swift in Sources */,
 				45A4CC591DE1FCEF008F625B /* CanHandleNotification.swift in Sources */,
+				45FFFA931E62CC3700E3FF43 /* UIImage+.swift in Sources */,
 				45B928FE1DDD5D7400BDCB41 /* CoreGraphics+.swift in Sources */,
 				45B928CE1DDD435E00BDCB41 /* UIView+Animation.swift in Sources */,
 				45F3FDD41DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift in Sources */,
