@@ -29,3 +29,14 @@ class ViewController: UIViewController {
         
     }
 }
+
+class ViewController1: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        imageView.image = UIImage.qrCode(from: "beeth0ven", tintColor: CIColor(hex: "#16a085")!)
+    }
+}

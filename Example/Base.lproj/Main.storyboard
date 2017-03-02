@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vxc-vs-UqY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6JY-cL-0qK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -79,6 +80,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EAd-bJ-ZWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130" y="123"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="zgI-X0-VV0">
+            <objects>
+                <viewController id="6JY-cL-0qK" customClass="ViewController1" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="huw-iU-BH1"/>
+                        <viewControllerLayoutGuide type="bottom" id="9iB-0C-ktP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7As-nM-mYf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p71-MU-dtw">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="p71-MU-dtw" secondAttribute="height" multiplier="1:1" id="cao-of-Rsb"/>
+                                    <constraint firstAttribute="width" constant="240" id="ww9-0h-Pql"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p71-MU-dtw" firstAttribute="centerY" secondItem="7As-nM-mYf" secondAttribute="centerY" id="07R-Ja-cgZ"/>
+                            <constraint firstItem="p71-MU-dtw" firstAttribute="centerX" secondItem="7As-nM-mYf" secondAttribute="centerX" id="CfB-XQ-Crs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="p71-MU-dtw" id="G5B-w9-4sd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvD-8d-N9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="788"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="BiQ-RB-Jdr">
