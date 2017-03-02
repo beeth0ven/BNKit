@@ -15,7 +15,7 @@ extension UIImage {
         let qrFilter = CIFilter(name: "CIQRCodeGenerator")!
         qrFilter.setDefaults()
         qrFilter.setValue(data, forKey: "inputMessage")
-        qrFilter.setValue("Q", forKey: "inputCorrectionLevel")
+        qrFilter.setValue("H", forKey: "inputCorrectionLevel")
         let ciImage = qrFilter.outputImage!
         let scaleX = length / ciImage.extent.size.width
         let scaleY = length / ciImage.extent.size.height
