@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     
-    public static func qrCode(from text: String, length: CGFloat = 200, tintColor: CIColor? = nil) -> UIImage {
+    public static func qrCode(from text: String, length: CGFloat = 200, tintColor: UIColor? = nil) -> UIImage {
         let data = text.data(using: .isoLatin1)!
         let qrFilter = CIFilter(name: "CIQRCodeGenerator")!
         qrFilter.setDefaults()
@@ -21,8 +21,8 @@ extension UIImage {
             let colorFilter = CIFilter(name: "CIFalseColor")!
             colorFilter.setDefaults()
             colorFilter.setValue(qrFilter.outputImage, forKey: "inputImage")
-            colorFilter.setValue(tintColor, forKey: "inputColor0")
-            colorFilter.setValue(CIColor(red: 1, green: 1, blue: 1), forKey: "inputColor1")
+            colorFilter.setValue(CIColor(color: tintColor), forKey: "inputColor0")
+            colorFilter.setValue(CIColor(color: .white), forKey: "inputColor1")
             ciImage = colorFilter.outputImage!
         } else {
             ciImage = qrFilter.outputImage!

@@ -37,6 +37,6 @@ class ViewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.image = UIImage.qrCode(from: "beeth0ven", tintColor: CIColor(hex: "#16a085")!)
+        imageView.image = UIImage.qrCode(from: "beeth0ven", tintColor: UIColor.brown)
     }
 }
