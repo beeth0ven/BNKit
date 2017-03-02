@@ -16,15 +16,16 @@ extension UIImage {
         qrFilter.setDefaults()
         qrFilter.setValue(data, forKey: "inputMessage")
         qrFilter.setValue("H", forKey: "inputCorrectionLevel")
-        var ciImage = qrFilter.outputImage!
-        
+        let ciImage: CIImage
         if let tintColor = tintColor {
             let colorFilter = CIFilter(name: "CIFalseColor")!
             qrFilter.setDefaults()
-            qrFilter.setValue(ciImage, forKey: "inputImage")
+            qrFilter.setValue(qrFilter.outputImage!, forKey: "inputImage")
             qrFilter.setValue(tintColor.ciColor, forKey: "inputColor0")
             qrFilter.setValue(UIColor.white.ciColor, forKey: "inputColor1")
             ciImage = colorFilter.outputImage!
+        } else {
+            ciImage = qrFilter.outputImage!
         }
         
         let scaleX = length / ciImage.extent.size.width
