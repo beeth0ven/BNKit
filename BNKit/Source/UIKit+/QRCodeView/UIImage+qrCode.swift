@@ -21,8 +21,8 @@ extension UIImage {
             let colorFilter = CIFilter(name: "CIFalseColor")!
             colorFilter.setDefaults()
             colorFilter.setValue(qrFilter.outputImage, forKey: "inputImage")
-            colorFilter.setValue(tintColor.ciColor, forKey: "inputColor0")
-            colorFilter.setValue(UIColor.white.ciColor, forKey: "inputColor1")
+            colorFilter.setValue(CIColor(red: 50 / 255, green: 50 / 255, blue: 50 / 255), forKey: "inputColor0")
+            colorFilter.setValue(CIColor(red: 1, green: 1, blue: 1), forKey: "inputColor1")
             ciImage = colorFilter.outputImage!
         } else {
             ciImage = qrFilter.outputImage!
