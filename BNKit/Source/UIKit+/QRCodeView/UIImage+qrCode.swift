@@ -19,11 +19,11 @@ extension UIImage {
         var ciImage = qrFilter.outputImage!
         
         if let tintColor = tintColor {
-            let colorFilter = CIFilter(name: "CIFalseColor", withInputParameters: [
-                "inputImage": ciImage,
-                "inputColor0": tintColor.ciColor,
-                "inputColor1": UIColor.white.ciColor
-                ])!
+            let colorFilter = CIFilter(name: "CIFalseColor")!
+            qrFilter.setDefaults()
+            qrFilter.setValue(ciImage, forKey: "inputImage")
+            qrFilter.setValue(tintColor.ciColor, forKey: "inputColor0")
+            qrFilter.setValue(UIColor.white.ciColor, forKey: "inputColor1")
             ciImage = colorFilter.outputImage!
         }
         
