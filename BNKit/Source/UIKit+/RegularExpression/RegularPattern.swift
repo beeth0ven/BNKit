@@ -29,7 +29,7 @@ extension RegularPattern {
             valid: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z0-9$@$!%*?&]{8,}"
         ),
         "email": RegularPattern(
-            input: "[A-Za-z0-9@._%+-]{0,0,320}",
+            input: "[A-Za-z0-9@._%+-]{0,320}",
             valid: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
         ),
         "chinesePhone": RegularPattern(
