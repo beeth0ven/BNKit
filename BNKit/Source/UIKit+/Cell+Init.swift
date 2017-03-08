@@ -13,7 +13,7 @@ public protocol IsTableViewCell {}
 extension UITableViewCell: IsTableViewCell {}
 extension IsTableViewCell where Self: UITableViewCell {
 
-    static func dequeue(from tableView: UITableView) -> Self {
+    public static func dequeue(from tableView: UITableView) -> Self {
         let identifier = String(describing: self)
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? Self else  {
             fatalError("Can't get \(identifier) from tableView!")
@@ -24,7 +24,7 @@ extension IsTableViewCell where Self: UITableViewCell {
 
 extension IsTableViewCell where Self: UITableViewCell, Self: HasModel {
     
-    static func dequeue(from tableView: UITableView, withModel model: Model!) -> Self {
+    public static func dequeue(from tableView: UITableView, withModel model: Model!) -> Self {
         var cell = self.dequeue(from: tableView)
         cell.model = model
         return cell
