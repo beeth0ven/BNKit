@@ -10,6 +10,18 @@ import Foundation
 
 extension Objective where Base: NSObject {
     
+    public func findOrCreateValue<T>(forKey key: UnsafeRawPointer, createValue: () -> T) -> T {
+
+        switch value(forKey: key) {
+        case let result as T:
+            return result
+        default:
+            let result = createValue()
+            set(value: result, forKey: key)
+            return result
+        }
+    }
+    
     public func value(forKey key: UnsafeRawPointer) -> Any! {
         
         return objc_getAssociatedObject(base, key)

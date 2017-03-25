@@ -14,4 +14,8 @@ extension UIView {
         get { return !isHidden }
         set { isHidden = !newValue }
     }
+    
+    public var isOnScreen: Bool {
+        return window != nil
+    }
 }

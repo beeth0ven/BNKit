@@ -18,10 +18,8 @@ public protocol HasReuseDisposeBag: HasDisposeBag {
 extension HasReuseDisposeBag where Self: NSObject, Self: ReactiveCompatible, Self: ObjectiveCompatible  {
     
     public var reuseDisposeBag: DisposeBag {
-        switch objc.value(forKey: &Keys.reuseDisposeBag) {
-        case let disposeBag as DisposeBag:
-            return disposeBag
-        default:
+        
+        return objc.findOrCreateValue(forKey: &Keys.reuseDisposeBag, createValue: {
             let disposeBag = DisposeBag()
             objc.set(value: disposeBag, forKey: &Keys.reuseDisposeBag)
             rx.methodInvoked(reuseSelector)
@@ -30,7 +28,7 @@ extension HasReuseDisposeBag where Self: NSObject, Self: ReactiveCompatible, Sel
                 })
                 .disposed(by: disposeBag)
             return disposeBag
-        }
+        })
     }
 }
 
