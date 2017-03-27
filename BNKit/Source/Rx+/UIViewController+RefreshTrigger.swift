@@ -20,7 +20,9 @@ extension Reactive where Base: UIViewController, Base: ObjectiveCompatible {
     public var _refreshTrigger: Observable<Void> {
         
         return base.objc.findOrCreateValue(forKey: &Keys._refreshTrigger, createValue: {
-            refreshTrigger
+            Queue.main.execute { self.refreshTrigger.onNext() } // For first refresh trigger
+            return refreshTrigger
+                .debug("refreshTrigger")
                 .flatMapLatest {
                     self.base.view.isOnScreen ? Observable.just() : self.viewWillAppear.take(1)
                 }

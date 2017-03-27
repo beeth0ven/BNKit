@@ -49,6 +49,5 @@ class TableViewController: UITableViewController {
             .subscribe()
             .disposed(by: disposeBag)
     }
-    
-    
 }
+
