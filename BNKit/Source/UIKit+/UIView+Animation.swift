@@ -19,6 +19,18 @@ extension UIView {
             completion: nil
         )
     }
+    
+    public func animatedRelayout(duration: TimeInterval = .animation, completion: (() -> Void)? = nil) {
+        
+        UIView.animate(
+            withDuration: duration,
+            animations: {
+                self.layoutIfNeeded()
+        }, completion: { _ in
+            completion?()
+        })
+        
+    }
 }
 
 extension TimeInterval {

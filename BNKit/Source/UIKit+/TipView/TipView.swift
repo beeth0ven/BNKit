@@ -36,7 +36,7 @@ open class TipView: UIView, IsInBundle {
                         .map { _ in }
                 }
             }
-            .bindTo(rx_remove)
+            .bind(to: rx_remove)
             .disposed(by: disposeBag)
         
     }

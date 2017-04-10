@@ -21,7 +21,7 @@ extension ComputedVariable {
 
 extension ObservableType {
     
-    public func bindTo(_ variable: ComputedVariable<E>) -> Disposable {
+    public func bind(to variable: ComputedVariable<E>) -> Disposable {
         return subscribe { e in
             switch e {
             case let .next(element):
@@ -34,8 +34,8 @@ extension ObservableType {
         }
     }
     
-    public func bindTo(_ variable: ComputedVariable<E?>) -> Disposable {
-        return self.map { $0 as E? }.bindTo(variable)
+    public func bind(to variable: ComputedVariable<E?>) -> Disposable {
+        return self.map { $0 as E? }.bind(to: variable)
     }
 }
 
@@ -62,7 +62,7 @@ extension SharedSequenceConvertibleType where SharingStrategy == DriverSharingSt
 
 public func <-> <Base: UITextInput>(textInput: TextInput<Base>, variable: ComputedVariable<String>) -> Disposable {
     let bindToUIDisposable = variable.asObservable()
-        .bindTo(textInput.text)
+        .bind(to: textInput.text)
     let bindToVariable = textInput.text
         .subscribe(onNext: { [weak base = textInput.base] n in
             guard let base = base else {
@@ -93,7 +93,7 @@ public func <-> <T>(property: ControlProperty<T>, variable: ComputedVariable<T>)
     }
     
     let bindToUIDisposable = variable.asObservable()
-        .bindTo(property)
+        .bind(to: property)
     let bindToVariable = property
         .subscribe(onNext: { n in
             variable.value = n

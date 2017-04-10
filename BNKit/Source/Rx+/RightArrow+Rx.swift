@@ -16,36 +16,36 @@ infix operator --> : DefaultPrecedence
 
 public func --><OE: ObservableType, OR: ObserverType>(observable: OE, params: (disposeBag: DisposeBag, observer: OR))
     where OR.E == OE.E {
-        observable.bindTo(params.observer).disposed(by: params.disposeBag)
+        observable.bind(to: params.observer).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType, OR: ObserverType>(observable: OE, params: (disposeBag: DisposeBag, observer: OR))
     where OR.E == OE.E? {
-        observable.bindTo(params.observer).disposed(by: params.disposeBag)
+        observable.bind(to: params.observer).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: Variable<OE.E>)){
-        observable.bindTo(params.variable).disposed(by: params.disposeBag)
+        observable.bind(to: params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: Variable<OE.E?>)) {
-        observable.bindTo(params.variable).disposed(by: params.disposeBag)
+        observable.bind(to: params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: ComputedVariable<OE.E>)){
-    observable.bindTo(params.variable).disposed(by: params.disposeBag)
+    observable.bind(to: params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, variable: ComputedVariable<OE.E?>)) {
-    observable.bindTo(params.variable).disposed(by: params.disposeBag)
+    observable.bind(to: params.variable).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType>(observable: OE, params: (disposeBag: DisposeBag, binder: (OE) -> Disposable)) {
-        observable.bindTo(params.binder).disposed(by: params.disposeBag)
+        observable.bind(to: params.binder).disposed(by: params.disposeBag)
 }
 
 public func --><OE: ObservableType, R1>(observable: OE, params: (disposeBag: DisposeBag, binder: (OE) -> (R1) -> Disposable, curriedArgument: R1)) {
-        observable.bindTo(params.binder, curriedArgument: params.curriedArgument).disposed(by: params.disposeBag)
+        observable.bind(to: params.binder, curriedArgument: params.curriedArgument).disposed(by: params.disposeBag)
 }
 
 // MARK: Driver --> ObserverType

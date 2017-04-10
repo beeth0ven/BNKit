@@ -50,3 +50,11 @@ extension Reactive where Base: UITableView {
         return try model(at: indexPath)
     }
 }
+
+extension Reactive where Base: UITableView {
+    
+    public var reloadData: Observable<Void> {
+        return methodInvoked(#selector(UITableView.reloadData))
+            .mapToVoid()
+    }
+}
