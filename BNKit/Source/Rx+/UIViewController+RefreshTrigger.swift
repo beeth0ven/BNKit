@@ -24,7 +24,7 @@ extension Reactive where Base: UIViewController, Base: ObjectiveCompatible {
             return refreshTrigger
                 .debug("refreshTrigger")
                 .flatMapLatest {
-                    self.base.view.isOnScreen ? Observable.just() : self.viewWillAppear.take(1)
+                    self.base.view.isOnScreen ? Observable.just() : self.viewDidAppear.take(1)
                 }
                 .shareReplay(1)
         })
