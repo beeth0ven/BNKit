@@ -8,42 +8,36 @@
 
 import Foundation
 
-public struct Objective<Base> {
+public struct Objective {
     
-    public let base: Base
+    public let base: NSObject
     
-    public init(base: Base) {
+    public init(base: NSObject) {
         self.base = base
     }
 }
 
-public protocol ObjectiveCompatible {
-    associatedtype CompatibleType
+extension Objective {
     
-    static var objc: Objective<CompatibleType>.Type { get set }
-    
-    var objc: Objective<CompatibleType> { get set }
-}
-
-extension ObjectiveCompatible {
-    
-    public static var objc: Objective<Self>.Type {
-        get {
-            return Objective<Self>.self
-        }
-        set {
-            // this enables using Objective to "mutate" base type
+    public func findOrCreateValue<T>(forKey key: UnsafeRawPointer, createValue: () -> T) -> T {
+        
+        switch value(forKey: key) {
+        case let result as T:
+            return result
+        default:
+            let result = createValue()
+            set(value: result, forKey: key)
+            return result
         }
     }
     
-    public var objc: Objective<Self> {
-        get {
-            return Objective(base: self)
-        }
-        set {
-            // this enables using Objective to "mutate" base type
-        }
+    public func value(forKey key: UnsafeRawPointer) -> Any! {
+        
+        return objc_getAssociatedObject(base, key)
+    }
+    
+    public func set(value: Any!, forKey key: UnsafeRawPointer, policy: objc_AssociationPolicy = .OBJC_ASSOCIATION_RETAIN_NONATOMIC) {
+        
+        objc_setAssociatedObject(base, key, value, policy)
     }
 }
-
-extension NSObject: ObjectiveCompatible {}

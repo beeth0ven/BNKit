@@ -33,6 +33,8 @@
 		453F4EEB1E9BCB960055E8C0 /* String+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F4EEA1E9BCB960055E8C0 /* String+Height.swift */; };
 		453F4EED1E9BCBA50055E8C0 /* NSNumber+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F4EEC1E9BCBA50055E8C0 /* NSNumber+CGFloat.swift */; };
 		45612A261E862233004E921A /* UIViewController+RefreshTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45612A251E862233004E921A /* UIViewController+RefreshTrigger.swift */; };
+		456E4B6A1EAC3FE600F08287 /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E4B691EAC3FE600F08287 /* RxExtension.swift */; };
+		456E4B6C1EAC92CB00F08287 /* LeftArror+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E4B6B1EAC92CB00F08287 /* LeftArror+Rx.swift */; };
 		458125401DE2B09C002E3923 /* Operators+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4581253F1DE2B09C002E3923 /* Operators+.swift */; };
 		45A3D62E1DE0A749005B91A6 /* Number+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A3D62D1DE0A749005B91A6 /* Number+random.swift */; };
 		45A3D6301DE19156005B91A6 /* BNKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4535D21A1DDC547800C9677A /* BNKit.framework */; };
@@ -87,7 +89,6 @@
 		45EAAE531DDD881600FC7B6F /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE511DDD881600FC7B6F /* TipView.swift */; };
 		45EAAE541DDD881600FC7B6F /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45EAAE521DDD881600FC7B6F /* TipView.xib */; };
 		45EAAE561DDD893300FC7B6F /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EAAE551DDD893300FC7B6F /* UIView+.swift */; };
-		45EE28691DE29F9C009F866E /* RightArrow+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */; };
 		45F3FDD21DE681DD00CE3489 /* HasReuseDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */; };
 		45F3FDD41DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */; };
 		45F62FED1DEF0BEA00E4B2A5 /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F62FEC1DEF0BEA00E4B2A5 /* Objective.swift */; };
@@ -157,6 +158,8 @@
 		453F4EEA1E9BCB960055E8C0 /* String+Height.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Height.swift"; sourceTree = "<group>"; };
 		453F4EEC1E9BCBA50055E8C0 /* NSNumber+CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+CGFloat.swift"; sourceTree = "<group>"; };
 		45612A251E862233004E921A /* UIViewController+RefreshTrigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+RefreshTrigger.swift"; sourceTree = "<group>"; };
+		456E4B691EAC3FE600F08287 /* RxExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
+		456E4B6B1EAC92CB00F08287 /* LeftArror+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LeftArror+Rx.swift"; sourceTree = "<group>"; };
 		4581253F1DE2B09C002E3923 /* Operators+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Operators+.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45A3D62D1DE0A749005B91A6 /* Number+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+random.swift"; sourceTree = "<group>"; };
 		45A4CC581DE1FCEF008F625B /* CanHandleNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CanHandleNotification.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -209,7 +212,6 @@
 		45EAAE511DDD881600FC7B6F /* TipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TipView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45EAAE521DDD881600FC7B6F /* TipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
 		45EAAE551DDD893300FC7B6F /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
-		45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "RightArrow+Rx.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HasReuseDisposeBag.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45F3FDD31DE6823900CE3489 /* UIView+HasReuseDisposeBag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "UIView+HasReuseDisposeBag.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45F3FDD61DE6E95900CE3489 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				45EAAE3B1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift */,
 				45B928F11DDD546100BDCB41 /* HasDisposeBag.swift */,
 				45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */,
+				456E4B6B1EAC92CB00F08287 /* LeftArror+Rx.swift */,
 				45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */,
 				45F62FF41DF3B71500E4B2A5 /* NSObject+RxValue.swift */,
 				45B928E91DDD4FFE00BDCB41 /* ObservableType+.swift */,
@@ -400,8 +403,8 @@
 				45B928EB1DDD500400BDCB41 /* Operators.swift */,
 				4581253F1DE2B09C002E3923 /* Operators+.swift */,
 				45B928ED1DDD500C00BDCB41 /* Optional+Rx.swift */,
-				45EE28681DE29F9C009F866E /* RightArrow+Rx.swift */,
 				45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */,
+				456E4B691EAC3FE600F08287 /* RxExtension.swift */,
 				453449FF1DEFFF94009C349E /* RxNotification.swift */,
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
 				45A4CC5A1DE3505D008F625B /* UICollectionView+Rx.swift */,
@@ -682,6 +685,7 @@
 				45EAAE421DDD80EF00FC7B6F /* IsInBundle+UIView.swift in Sources */,
 				45B928E31DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift in Sources */,
 				4535D2411DDD384200C9677A /* Array+.swift in Sources */,
+				456E4B6C1EAC92CB00F08287 /* LeftArror+Rx.swift in Sources */,
 				45EAAE3A1DDD7FBB00FC7B6F /* UIApplication+.swift in Sources */,
 				45CB64F71DEC6BBA000097C7 /* ComputedVariable+.swift in Sources */,
 				45B929001DDD5DC300BDCB41 /* InfoPlist.swift in Sources */,
@@ -698,6 +702,7 @@
 				45B928BF1DDD3E2900BDCB41 /* TimeInterval+.swift in Sources */,
 				4535D2451DDD38C100C9677A /* Queue.swift in Sources */,
 				45B928F01DDD501000BDCB41 /* ComputedVariable.swift in Sources */,
+				456E4B6A1EAC3FE600F08287 /* RxExtension.swift in Sources */,
 				45B928D21DDD43D200BDCB41 /* UIColor+Flat.swift in Sources */,
 				45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */,
 				453449E91DEECBBB009C349E /* FileManager+.swift in Sources */,
@@ -754,7 +759,6 @@
 				45B928CA1DDD42E300BDCB41 /* UIViewController+Alert.swift in Sources */,
 				45B928E41DDD4FD000BDCB41 /* UITableView+Rx.swift in Sources */,
 				45F62FF11DEF136300E4B2A5 /* NSObject+objc.swift in Sources */,
-				45EE28691DE29F9C009F866E /* RightArrow+Rx.swift in Sources */,
 				45B928EE1DDD500C00BDCB41 /* Optional+Rx.swift in Sources */,
 				45B929021DDD5E2F00BDCB41 /* NSJSONSerialization+.swift in Sources */,
 				45CE7CD51DF43F6F005CD346 /* Transformer.swift in Sources */,

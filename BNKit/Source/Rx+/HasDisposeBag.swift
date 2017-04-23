@@ -17,7 +17,7 @@ public protocol HasDisposeBag {
 
 extension NSObject: HasDisposeBag {}
 
-extension HasDisposeBag where Self: ObjectiveCompatible, Self: NSObject {
+extension HasDisposeBag where Self: NSObject {
     
 
     public var disposeBag: DisposeBag {

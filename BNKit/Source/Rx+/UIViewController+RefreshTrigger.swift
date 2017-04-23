@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-extension Reactive where Base: UIViewController, Base: ObjectiveCompatible {
+extension Reactive where Base: UIViewController {
     
     public var refreshTrigger: PublishSubject<Void> {
         
