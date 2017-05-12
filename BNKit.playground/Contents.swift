@@ -12,71 +12,6 @@ import Action
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-protocol IsPageResultViewModel {
-    associatedtype Item
-    associatedtype Cursor
-    associatedtype ReloadInput
-    associatedtype ReloadOutput
-    associatedtype NextPageInput
-    associatedtype NextPageOutput
-    typealias UpdateItems = (inout [Item]) -> Void
-
-    var reloadTrigger: PublishSubject<Void> { get }
-    var loadNextPageTrigger: PublishSubject<Void> { get }
-    
-    var reloadAction: Action<ReloadInput, ReloadOutput>! { get }
-    var loadNextPageAction: Action<NextPageInput, NextPageOutput>! { get }
-
-    var items: Observable<[Item]>! { get }
-    var cursor: Observable<Cursor?>! { get }
-    var executing: Observable<Bool>! { get }
-    var isEmpty: Observable<Bool>!{ get }
-    
-    var updateItems: PublishSubject<UpdateItems> { get }
-    
-    func createReloadAction() -> Action<ReloadInput, ReloadOutput>
-    func createLoadNextPageAction() -> Action<NextPageInput, NextPageOutput>
-    func createCursor() -> Observable<Cursor?>
-
-}
-
-extension IsPageResultViewModel {
-    
-    func createItems() -> Observable<[Item]> {
-        return updateItems.scan([]) { (items, updateItem) in
-            var items = items
-            updateItem(&items)
-            return items;
-            }
-            .observeOnMainScheduler()
-            .shareReplay(1)
-    }
-    
-    func createExecuting() -> Observable<Bool> {
-        return Observable.combineLatest(
-            reloadAction.executing.startWith(false),
-            loadNextPageAction.executing.startWith(false)
-        ) { $0 || $1 }
-            .observeOnMainScheduler()
-            .shareReplay(1)
-    }
-    
-    func createIsEmpty() -> Observable<Bool> {
-        let isEmpty = items
-            .debounce(0.1, scheduler: MainScheduler.asyncInstance)
-            .withLatestFrom(cursor, executing) { (items, cursor, executing) in
-                items.isEmpty && cursor == nil && !executing
-            }
-        
-        return Observable.merge(
-            reloadAction.executing.filter { $0 }.map { _ in false },
-            isEmpty
-            )
-            .observeOnMainScheduler()
-            .shareReplay(1)
-    }
-}
-
 public struct ItemsViewModel<Item, ReloadInput, ReloadOutput> {
     
     // Output
@@ -121,7 +56,7 @@ public struct ItemsViewModel<Item, ReloadInput, ReloadOutput> {
 let viewModel = ItemsViewModel(
     reloadTrigger: .just(),
     toInput: { 1 },
-    toOutput: { input in Observable<(Int, [String])>.just((input, [])) },
+    toOutput: { input -> Observable<(Int, [String])> in .just((input, [])) },
     toItems: { output in output.1 }
 )
 
@@ -209,90 +144,18 @@ struct PageItemsViewModel<Item, ReloadInput, ReloadOutput, NextPageInput, NextPa
 
 }
 
-struct PageResultViewModel: IsPageResultViewModel {
-    
-    typealias Item = String
-    typealias Cursor = Int
-    typealias ReloadInput = Int
-    typealias ReloadOutput = (items: [Item], cursor: Cursor?)
-    typealias NextPageInput = Cursor
-    typealias NextPageOutput = (items: [Item], cursor: Cursor?)
-    
-    let reloadTrigger = PublishSubject<Void>()
-    let loadNextPageTrigger = PublishSubject<Void>()
-    let updateItems = PublishSubject<UpdateItems>()
+let pageViewModel = PageItemsViewModel(
+    reloadTrigger: .just(),
+    toReloadInput: { () -> String in "1" },
+    toReloadOutput: { input -> Observable<(Bool, [String])> in .just((true, [])) },
+    toReloadItems: { output -> [String] in output.1 },
+    toReloadCursor: { (oldPage, output) -> Int? in output.0 ? (oldPage ?? 1) + 1 : nil },
+    loadNextPageTrigger: .just(),
+    toLoadNextPageInput: { page in (page, "") },
+    toLoadNextPageOutput: { input -> Observable<(Bool, [String])> in .just((true, [])) },
+    toLoadNextPageItems: { output in output.1 },
+    toLoadNextPageCursor: { (oldPage, output) in output.0 ? (oldPage ?? 1) + 1 : nil }
+)
 
-    private(set) var reloadAction: Action<ReloadInput, ReloadOutput>!
-    private(set) var loadNextPageAction: Action<NextPageInput, NextPageOutput>!
-    
-    private(set) var items: Observable<[Item]>!
-    private(set) var cursor: Observable<Cursor?>!
-    private(set) var executing: Observable<Bool>!
-    private(set) var isEmpty: Observable<Bool>!
-    
-    private let disposeBag = DisposeBag()
-    
-    init() {
-        setup()
-        setupAction()
-    }
-    
-    private mutating func setup() {
-        reloadAction = createReloadAction()
-        loadNextPageAction = createLoadNextPageAction()
-        items = createItems()
-        cursor = createCursor()
-        executing = createExecuting()
-        isEmpty = createIsEmpty()
-    }
-    
-    private func setupAction() {
-        
-        let params = 1
-        
-        reloadTrigger
-            .withLatestFrom(executing)
-            .filter { !$0 }
-            .map { _ in params } // Need change
-            .bind(to: reloadAction.inputs)
-            .disposed(by: disposeBag)
-        
-        loadNextPageTrigger
-            .withLatestFrom(executing)
-            .filter { !$0 }
-            .withLatestFrom(cursor)
-            .filterNil()
-            .map { _ in params } // Need change
-            .bind(to: loadNextPageAction.inputs)
-            .addDisposableTo(disposeBag)
-        
-        Observable.merge(
-            reloadAction.elements.map { output -> UpdateItems in { $0 = output.items } },
-            loadNextPageAction.elements.map { output -> UpdateItems in { $0 += output.items } }
-            )
-            .bind(to: updateItems)
-            .disposed(by: disposeBag)
-    }
-    
-    func createReloadAction() -> Action<ReloadInput, (items: [Item], cursor: Cursor?)> {
-        return Action { _ in .empty() }
-    }
-    
-    func createLoadNextPageAction() -> Action<Cursor, (items: [Item], cursor: Cursor?)> {
-        return Action { _ in .empty() }
-    }
-    
-    func createCursor() -> Observable<Cursor?> {
-        return Observable.merge(
-            reloadAction.executing.filter { $0 }.map { _ in false },
-            reloadAction.elements.map { $0.cursor != nil },
-            loadNextPageAction.elements.map { $0.cursor != nil }
-            )
-            .scan(nil) { (oldPage, hasNextPage) in
-                hasNextPage ? (oldPage ?? 1) + 1 : nil
-            }
-            .observeOnMainScheduler()
-            .shareReplay(1)
-    }
-}
-
+let items = pageViewModel.items
+let i = viewModel.items
