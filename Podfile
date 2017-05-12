@@ -5,6 +5,7 @@ def common
     pod 'RxSwift',    '~> 3.0'
     pod 'RxCocoa',    '~> 3.0'
     pod 'RxDataSources', '~> 1.0'
+    pod 'Action'
 end
 
 target 'BNKit' do

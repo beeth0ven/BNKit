@@ -18,3 +18,11 @@ extension ObservableType {
         return map { _ in }
     }
 }
+
+extension ObservableType {
+    
+    public func withLatestFrom<SecondO, ThirdO, ResultType>(_ second: SecondO, _ third: ThirdO ,resultSelector: @escaping (Self.E, SecondO.E, ThirdO.E) throws -> ResultType) -> RxSwift.Observable<ResultType> where SecondO : ObservableConvertibleType, ThirdO : ObservableConvertibleType {
+        return withLatestFrom(second) { $0 }
+            .withLatestFrom(third) { (params, param2) in try resultSelector(params.0, params.1, param2) }
+    }
+}
