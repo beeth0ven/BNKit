@@ -20,18 +20,10 @@ import Foundation
     extension Reactive where Base: UIImagePickerController {
         
         /**
-         Reactive wrapper for `delegate`.
-         For more information take a look at `DelegateProxyType` protocol documentation.
-         */
-        public var delegate: DelegateProxy {
-            return RxImagePickerDelegateProxy.proxyForObject(base)
-        }
-        
-        /**
          Reactive wrapper for `delegate` message.
          */
         public var didFinishPickingMediaWithInfo: Observable<[String : AnyObject]> {
-            return delegate
+            return self.delegate
                 .methodInvoked(#selector(UIImagePickerControllerDelegate.imagePickerController(_:didFinishPickingMediaWithInfo:)))
                 .map({ (a) in
                     return try castOrThrow(Dictionary<String, AnyObject>.self, a[1])
@@ -43,7 +35,7 @@ import Foundation
          Reactive wrapper for `delegate` message.
          */
         public var didCancel: Observable<()> {
-            return delegate
+            return self.delegate
                 .methodInvoked(#selector(UIImagePickerControllerDelegate.imagePickerControllerDidCancel(_:)))
                 .map {_ in () }
                 .do(onNext: { _ in self.base.presentingViewController?.dismiss(animated: true, completion: nil) })

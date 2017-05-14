@@ -52,7 +52,6 @@
 		45B928D71DDD44D800BDCB41 /* IsManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928D51DDD44D800BDCB41 /* IsManagedObject.swift */; };
 		45B928DC1DDD4FA000BDCB41 /* Collection+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928DB1DDD4FA000BDCB41 /* Collection+Rx.swift */; };
 		45B928E21DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */; };
-		45B928E31DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */; };
 		45B928E41DDD4FD000BDCB41 /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928E11DDD4FD000BDCB41 /* UITableView+Rx.swift */; };
 		45B928E71DDD4FE500BDCB41 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928E51DDD4FE500BDCB41 /* UIViewController+Rx.swift */; };
 		45B928E81DDD4FE500BDCB41 /* UIView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B928E61DDD4FE500BDCB41 /* UIView+Rx.swift */; };
@@ -175,7 +174,6 @@
 		45B928D51DDD44D800BDCB41 /* IsManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsManagedObject.swift; sourceTree = "<group>"; };
 		45B928DB1DDD4FA000BDCB41 /* Collection+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Rx.swift"; sourceTree = "<group>"; };
 		45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
-		45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
 		45B928E11DDD4FD000BDCB41 /* UITableView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "UITableView+Rx.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		45B928E51DDD4FE500BDCB41 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		45B928E61DDD4FE500BDCB41 /* UIView+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rx.swift"; sourceTree = "<group>"; };
@@ -403,7 +401,6 @@
 				45B928EB1DDD500400BDCB41 /* Operators.swift */,
 				4581253F1DE2B09C002E3923 /* Operators+.swift */,
 				45B928ED1DDD500C00BDCB41 /* Optional+Rx.swift */,
-				45B928E01DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift */,
 				456E4B691EAC3FE600F08287 /* RxExtension.swift */,
 				453449FF1DEFFF94009C349E /* RxNotification.swift */,
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
@@ -683,7 +680,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45EAAE421DDD80EF00FC7B6F /* IsInBundle+UIView.swift in Sources */,
-				45B928E31DDD4FD000BDCB41 /* RxImagePickerDelegateProxy.swift in Sources */,
 				4535D2411DDD384200C9677A /* Array+.swift in Sources */,
 				456E4B6C1EAC92CB00F08287 /* LeftArror+Rx.swift in Sources */,
 				45EAAE3A1DDD7FBB00FC7B6F /* UIApplication+.swift in Sources */,
