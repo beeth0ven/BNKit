@@ -10,6 +10,8 @@
 		0FD6B06AE5B4E2B0CC792F8D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69079252FB95C8FEE9CB05C8 /* Pods_Example.framework */; };
 		4511E4091DE49DFC0026C975 /* Observable+timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4511E4081DE49DFC0026C975 /* Observable+timer.swift */; };
 		45199F0E1DE93AFE00846954 /* Cell+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F0D1DE93AFE00846954 /* Cell+Init.swift */; };
+		4527C5B61ECC893700C05D56 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527C5B51ECC893700C05D56 /* ItemsViewModel.swift */; };
+		4527C5B81ECC896C00C05D56 /* PaginationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4527C5B71ECC896C00C05D56 /* PaginationViewModel.swift */; };
 		452A9E851E67ECF900E409F1 /* GetQRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A9E831E67ECF900E409F1 /* GetQRCodeView.swift */; };
 		452A9E861E67ECF900E409F1 /* UIImage+qrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452A9E841E67ECF900E409F1 /* UIImage+qrCode.swift */; };
 		453449E91DEECBBB009C349E /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453449E81DEECBBB009C349E /* FileManager+.swift */; };
@@ -129,6 +131,8 @@
 		3648547F319699904FE3D426 /* Pods-BNKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BNKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-BNKit/Pods-BNKit.release.xcconfig"; sourceTree = "<group>"; };
 		4511E4081DE49DFC0026C975 /* Observable+timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+timer.swift"; sourceTree = "<group>"; };
 		45199F0D1DE93AFE00846954 /* Cell+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Init.swift"; sourceTree = "<group>"; };
+		4527C5B51ECC893700C05D56 /* ItemsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
+		4527C5B71ECC896C00C05D56 /* PaginationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewModel.swift; sourceTree = "<group>"; };
 		452A9E831E67ECF900E409F1 /* GetQRCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetQRCodeView.swift; sourceTree = "<group>"; };
 		452A9E841E67ECF900E409F1 /* UIImage+qrCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+qrCode.swift"; sourceTree = "<group>"; };
 		453449E81DEECBBB009C349E /* FileManager+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
@@ -393,6 +397,7 @@
 				45EAAE3B1DDD7FDB00FC7B6F /* CLGeocoder+Rx.swift */,
 				45B928F11DDD546100BDCB41 /* HasDisposeBag.swift */,
 				45F3FDD11DE681DD00CE3489 /* HasReuseDisposeBag.swift */,
+				4527C5B51ECC893700C05D56 /* ItemsViewModel.swift */,
 				456E4B6B1EAC92CB00F08287 /* LeftArror+Rx.swift */,
 				45EAAE321DDD7E8700FC7B6F /* MKMapView+Rx.swift */,
 				45F62FF41DF3B71500E4B2A5 /* NSObject+RxValue.swift */,
@@ -401,6 +406,7 @@
 				45B928EB1DDD500400BDCB41 /* Operators.swift */,
 				4581253F1DE2B09C002E3923 /* Operators+.swift */,
 				45B928ED1DDD500C00BDCB41 /* Optional+Rx.swift */,
+				4527C5B71ECC896C00C05D56 /* PaginationViewModel.swift */,
 				456E4B691EAC3FE600F08287 /* RxExtension.swift */,
 				453449FF1DEFFF94009C349E /* RxNotification.swift */,
 				45B928DF1DDD4FD000BDCB41 /* UIImagePickerController+Rx.swift */,
@@ -724,6 +730,7 @@
 				45CED7591E14B6CC00B5A313 /* IsInStoryboard.swift in Sources */,
 				45EAAE341DDD7E8700FC7B6F /* MKMapView+Rx.swift in Sources */,
 				45B928E81DDD4FE500BDCB41 /* UIView+Rx.swift in Sources */,
+				4527C5B61ECC893700C05D56 /* ItemsViewModel.swift in Sources */,
 				45B928D61DDD44D800BDCB41 /* CoreDataStack.swift in Sources */,
 				458125401DE2B09C002E3923 /* Operators+.swift in Sources */,
 				45B928D01DDD437900BDCB41 /* UIColor+Hex.swift in Sources */,
@@ -733,6 +740,7 @@
 				453F4EE31E9BCA820055E8C0 /* Optional+Collection.swift in Sources */,
 				45B928CC1DDD42F100BDCB41 /* UIView+IBInspectable.swift in Sources */,
 				45EAAE531DDD881600FC7B6F /* TipView.swift in Sources */,
+				4527C5B81ECC896C00C05D56 /* PaginationViewModel.swift in Sources */,
 				452A9E851E67ECF900E409F1 /* GetQRCodeView.swift in Sources */,
 				45A4CC591DE1FCEF008F625B /* CanHandleNotification.swift in Sources */,
 				45FFFA931E62CC3700E3FF43 /* UIImage+.swift in Sources */,
