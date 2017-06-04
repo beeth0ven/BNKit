@@ -17,6 +17,12 @@ target 'Example' do
     shared
 end
 
+target 'BNKitTests' do
+    shared
+    pod 'RxTest'
+    pod 'RxBlocking'
+end
+
 post_install do |installer|
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|

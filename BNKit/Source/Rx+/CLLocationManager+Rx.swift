@@ -46,7 +46,7 @@ extension Reactive where Base: CLLocationManager {
     
     public var didAuthorize: Observable<Void> {
         
-        let status = CLLocationManager.authorizationStatus()
+        let status: CLAuthorizationStatus = CLLocationManager.authorizationStatus()
         
         switch status {
         case .authorizedAlways, .authorizedWhenInUse:
@@ -66,8 +66,8 @@ extension Reactive where Base: CLLocationManager {
         
         return didChangeAuthorizationStatus
             .startWith(status)
-            .filter { $0 == .authorizedAlways || $0 == .authorizedWhenInUse }
-            .map { _ in }
+            .filter { (state: CLAuthorizationStatus) in state == .authorizedAlways || state == .authorizedWhenInUse }
+            .mapToVoid()
         
     }
     

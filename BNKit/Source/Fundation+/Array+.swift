@@ -31,7 +31,6 @@ extension Array {
 extension Array where Element: OptionalType {
     
     public func filterNil() -> [Element.Wrapped] {
-        return filter { $0.value != nil }
-            .map { $0.value! }
+        return flatMap { $0.value }
     }
 }

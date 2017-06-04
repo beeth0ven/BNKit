@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>BNKitTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Example.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4527C5D51ED16DA300C05D56</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4535D2191DDC547800C9677A</key>
 		<dict>
 			<key>primary</key>
