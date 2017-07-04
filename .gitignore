@@ -3,3 +3,5 @@ Podfile.lock
 *.DS_Store 
 BNKit.xcworkspace/xcuserdata/Air.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
+
+buildtimes.log

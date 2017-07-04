@@ -27,7 +27,7 @@ import Foundation
  
  ```
  */
-public protocol IntegerHasRandom: Integer, IntegerArithmetic {
+public protocol IntegerHasRandom: Integer {
     init(_ value: UInt32)
     func toUInt32() -> UInt32
 }
