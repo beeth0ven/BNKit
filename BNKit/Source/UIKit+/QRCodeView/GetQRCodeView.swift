@@ -37,7 +37,6 @@ open class GetQRCodeView: UIView, AVCaptureMetadataOutputObjectsDelegate {
     
     override open func awakeFromNib() {
         super.awakeFromNib()
-        
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
         do {
@@ -103,5 +102,14 @@ open class GetQRCodeView: UIView, AVCaptureMetadataOutputObjectsDelegate {
                 _value.onNext(metadataObj.stringValue!)
             }
         }
+    }
+    
+    public func startCapture() {
+        captureSession?.startRunning()
+    }
+    
+    public func stopCapture() {
+        captureSession?.stopRunning()
+        qrCodeFrameView?.frame = .zero
     }
 }
