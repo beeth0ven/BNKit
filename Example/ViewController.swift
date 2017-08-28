@@ -52,3 +52,18 @@ class TableViewController: UITableViewController {
 }
 
 
+class ScanQRCodeViewController: UIViewController {
+    
+    @IBOutlet weak var getQRCodeView: GetQRCodeView!
+    @IBOutlet weak var label: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        getQRCodeView.value
+//            .debounce(0.3, scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .bind(to: label.rx.text)
+            .disposed(by: disposeBag)
+    }
+}

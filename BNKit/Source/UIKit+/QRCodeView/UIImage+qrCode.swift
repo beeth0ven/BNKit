@@ -11,7 +11,7 @@ import UIKit
 extension UIImage {
     
     public static func qrCode(from text: String, length: CGFloat = 200, tintColor: UIColor? = nil) -> UIImage {
-        let data = text.data(using: .isoLatin1)!
+        let data = text.data(using: .utf8)!
         let qrFilter = CIFilter(name: "CIQRCodeGenerator")!
         qrFilter.setDefaults()
         qrFilter.setValue(data, forKey: "inputMessage")

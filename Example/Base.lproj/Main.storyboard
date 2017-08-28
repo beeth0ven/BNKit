@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vxc-vs-UqY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vxc-vs-UqY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PYQ-ye-IP6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UITableViewCell" textLabel="Z3G-hF-j1b" style="IBUITableViewCellStyleDefault" id="iCU-PD-h0f">
@@ -62,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1630" y="123"/>
+            <point key="canvasLocation" x="1702" y="-179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cdx-rY-0j9">
@@ -101,7 +102,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1. Cells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="adP-rm-kSI">
-                                                    <rect key="frame" x="15" y="0.0" width="325" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -111,6 +112,26 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="JIc-k1-6Mb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="pZJ-rw-Kc9" style="IBUITableViewCellStyleDefault" id="JFP-HT-EC8">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JFP-HT-EC8" id="K7K-Pl-QMp">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2. QRCode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pZJ-rw-Kc9">
+                                                    <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="J8O-Bx-pZN" kind="show" id="38r-PK-67Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -128,6 +149,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFC-N9-ubC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="876" y="123"/>
+        </scene>
+        <!--ScanQR Code View Controller-->
+        <scene sceneID="Lf7-P5-831">
+            <objects>
+                <viewController storyboardIdentifier="ScanQRCodeViewController" id="J8O-Bx-pZN" customClass="ScanQRCodeViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ydC-5f-Jf1"/>
+                        <viewControllerLayoutGuide type="bottom" id="pdG-NG-e1A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="igA-BW-NFh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-pa-5bW" customClass="GetQRCodeView" customModule="BNKit">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="579"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSd-Kp-9en">
+                                <rect key="frame" x="0.0" y="579" width="375" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hZt-pa-5bW" secondAttribute="trailing" id="4z6-eL-V5p"/>
+                            <constraint firstItem="pdG-NG-e1A" firstAttribute="top" secondItem="WSd-Kp-9en" secondAttribute="bottom" id="7vr-Df-79l"/>
+                            <constraint firstItem="WSd-Kp-9en" firstAttribute="top" secondItem="hZt-pa-5bW" secondAttribute="bottom" id="ETW-SX-O3U"/>
+                            <constraint firstItem="hZt-pa-5bW" firstAttribute="top" secondItem="igA-BW-NFh" secondAttribute="top" id="JyH-Ym-xJC"/>
+                            <constraint firstAttribute="trailing" secondItem="WSd-Kp-9en" secondAttribute="trailing" id="Nh7-17-ry8"/>
+                            <constraint firstItem="pdG-NG-e1A" firstAttribute="top" secondItem="hZt-pa-5bW" secondAttribute="bottom" constant="88" id="hWR-qL-ITW"/>
+                            <constraint firstItem="WSd-Kp-9en" firstAttribute="leading" secondItem="igA-BW-NFh" secondAttribute="leading" id="jDm-qW-m1s"/>
+                            <constraint firstItem="hZt-pa-5bW" firstAttribute="leading" secondItem="igA-BW-NFh" secondAttribute="leading" id="plf-GK-pug"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="getQRCodeView" destination="hZt-pa-5bW" id="lvI-Uc-7za"/>
+                        <outlet property="label" destination="WSd-Kp-9en" id="gX7-An-HhN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RuC-KU-7v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1702" y="497"/>
         </scene>
     </scenes>
 </document>
